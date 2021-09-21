@@ -1,0 +1,30 @@
+// Description:
+//    Programme testant des declarations de variables.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  aucun
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	// declarations simples sans initialisation
+	int b;
+	boolean c;
+	float d;
+	
+	int int; 	// On peut déclarer une variable qui a un nom de type
+	float boolean;
+
+	// declarations multiples sans initialisation
+	int g,h;
+		
+	// declarations avec initialisation
+	int i1=0, i2=1;
+	boolean b1=true, b2=false;
+	float i = 1.1, j = 2;	// initialisation de j soit passer par un ConvFloat
+}

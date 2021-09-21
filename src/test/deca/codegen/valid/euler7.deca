@@ -1,0 +1,40 @@
+// Description:
+//    Test de programme legerement complexe
+//	  Calcule le 201e nombre premier (trop long pour 10 001)
+//    https://projecteuler.net/problem=7
+//
+// Resultats:
+//    1231
+// 
+// Historique:
+//    cree le 19/01/2021
+
+#include "liste_chainee_entiers.decah"
+
+{
+	int nb = 3,index;
+	int premier;
+	boolean est_premier;
+	IntList premiers = new IntList();
+	
+	premiers.put(2);	// on ajoute 2 histoire que la liste ne soit pas vide
+	
+	while(premiers.getSize() < 202) {
+		index = 0;
+		est_premier = true;
+		while(est_premier == true && index<premiers.getSize()){
+			premier = premiers.get(index);
+			if(nb%premier == 0) {
+				est_premier = false;
+			}
+			index = index + 1;
+		}
+		
+		if(est_premier) {
+			premiers.put(nb);
+		}
+		
+		nb = nb + 1;
+	}
+	println(premiers.get(-1));
+}

@@ -1,0 +1,34 @@
+// Description:
+//    Programme testant la redeclaration de variable.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  aucun
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	// declarations simples 1
+	int b;
+	boolean c;
+	float d;
+	
+	// declarations multiples
+	int g,h;
+	boolean i,j ,k;	// espace avant la virgule
+	float l,m, n;	// espace apres la virgule
+	
+	// declarations simples 2
+	int __entier__a0123456789_t_0$$;
+	boolean $$bool$$;
+	float _,$;	// deux flottants : '_' et '$'
+	
+	// declarations avec affectations
+	int i1=0,i2=1,i3 = 23456789;
+	boolean b1=true, b2 = false;
+	float f1 = 1.1;
+}

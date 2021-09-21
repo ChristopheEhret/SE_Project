@@ -1,0 +1,26 @@
+// Description:
+//    Programme testant un cast incompatible
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+// Resultats:
+//    test_context : erreur ligne 23 : The types are incompatible for a cast
+class A  {
+	int x ;
+	float y;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		string s ;
+		return x;
+	}
+}
+{
+	A a = new A();
+	int c = 5;
+	float b = (float)(a);
+	println("hello");
+	
+}

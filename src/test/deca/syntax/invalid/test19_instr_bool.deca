@@ -1,0 +1,16 @@
+// Description:
+//    Programme testant une instruction invalide sur booleen.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+// 	  test_lex : erreur ligne 15 : token recognition error at: '& '
+//    test_synt : erreur ligne 15 : token recognition error at: '& '
+//
+// Historique:
+//    cree le 10/01/2021
+
+{
+	boolean b = true & false;
+}

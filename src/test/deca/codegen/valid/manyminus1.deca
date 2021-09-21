@@ -1,0 +1,12 @@
+// Description:
+//    Test de la gestion des registres pour un opérateur unaire
+//	  quand il n'y en a pas assez.
+//
+// Resultats:
+//    -15
+//
+
+{
+   println(-1+(-1+(-1+(-1+(-1+(-1+(-1+(-1+(-1+(-1+(-1+(-1+(-1+(-1+(-1)))))))))))))));
+}
+

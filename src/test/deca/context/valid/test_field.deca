@@ -1,0 +1,20 @@
+// Description:
+//    Programme testant simplement la declaration d'une classe avec un champ
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    hello
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A extends Object {
+	int x;
+	
+}
+{
+	println("hello");
+}

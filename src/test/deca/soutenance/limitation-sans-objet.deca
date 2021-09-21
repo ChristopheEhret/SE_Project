@@ -1,0 +1,14 @@
+// Description:
+//    Support de demonstration pour la soutenance : 
+//      limitations instructions
+//
+// Historique :
+//  28/01/2021
+
+{
+    boolean b1 = true;
+    //println(b1);
+
+    b1 = false;
+    boolean b2 = !b2;
+}

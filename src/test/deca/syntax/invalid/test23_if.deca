@@ -1,0 +1,20 @@
+// Description:
+//    Programme testant un 'if' invalide.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 17 : missing '{' at 'i'
+//
+// Historique:
+//    cree le 12/01/2021
+
+{
+int i;
+	if(true)
+		i = 2;
+	
+	println("Hello");
+}

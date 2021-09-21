@@ -1,0 +1,25 @@
+// Description:
+//    Programme testant un cast int ---> float
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    5.0
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A  {
+	protected int x=5 ;
+	int getX(){
+		return x;
+	}
+}
+{
+	A a = new A();
+	float b = a.getX();
+	println(b);
+	
+}

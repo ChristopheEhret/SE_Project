@@ -1,0 +1,16 @@
+// Description:
+//    Programme verifiant qu'il est impossible de déclarer un champ par lui même
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 15 : L'identificateur d'expression 'a' n'est pas déclaré
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A {
+	int a = a;
+}

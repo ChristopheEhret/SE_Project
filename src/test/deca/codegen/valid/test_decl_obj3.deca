@@ -1,0 +1,28 @@
+// Description:
+//    Programme testant simplement la déclaration et l'instanciation d'une classe
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    3
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A  {
+	int x;
+
+    int return3(){
+        return 3;
+    }
+}
+
+{
+	int i;
+	A a = new A();
+
+    i = a.return3();
+	println(i);
+}

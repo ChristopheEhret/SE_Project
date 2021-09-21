@@ -1,0 +1,24 @@
+// Description:
+//    Programme testant la boucle while.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  pas de resultat
+//
+// Historique:
+//    cree le 10/01/2020
+
+{
+	int x;
+	
+	while(1==true){;}	// '1==true' est invalide contextuellement
+	while(false > 8.4f)
+	{
+		while(x=true){	// 'x=true' est une expression
+			4/false;	// 4/false est une expression aussi normalement
+		}
+	}
+}

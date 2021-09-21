@@ -1,0 +1,27 @@
+// Description:
+//    Programme testant la boucle while.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  pas de resultat
+//
+// Historique:
+//    cree le 10/01/2020
+
+{
+	int x;
+	float f;
+	boolean b;
+	
+	while(true){}
+	while(x > 8.4f)
+	{
+		while(!b || f > 5){
+			b = !b;	
+			x = -x;
+		}
+	}
+}

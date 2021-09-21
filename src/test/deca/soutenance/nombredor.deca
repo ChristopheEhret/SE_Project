@@ -1,0 +1,46 @@
+// Description:
+//    Support de demonstration pour la soutenance : nombre d'or
+//
+// Historique :
+//  28/01/2021
+
+{
+    int n1 = 0, n2 = 1,temp;
+    int nb_user,i = 0;
+    float or;
+    boolean b1 = true;
+
+    while(b1) {
+        println("Veuillez entrer un entier positif");
+        nb_user = readInt();
+
+        if(nb_user>0) {
+            b1 = false;
+        } else {
+            println(nb_user," <= ",0," : vous vous êtes trompés");
+        }
+    }
+
+    print(" ",n1);
+    while(i<nb_user) {
+        temp = n1;
+        n1 = n2;
+        n2 = n2 + temp;
+
+        print(" ",n1);
+
+        i = i + 1;
+        if(i%10 == 0) {
+            println();
+        }
+    }
+    println(" ",n2);
+    println();
+    println("Afficher l'approximation du nombre d'or ? ('0' oui, * pour non)");
+
+    temp = readInt();
+    if(temp == 0) {
+        or = ((float) (n2))/((float) (n1));
+        println(n2,".0/",n1,".0 = ",or);
+    }
+}

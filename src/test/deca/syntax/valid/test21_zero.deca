@@ -1,0 +1,16 @@
+// Description:
+//    Programme testant les flottants petits.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+// 	  0.0
+//
+// Historique:
+//    cree le 13/01/2020
+
+{
+	println(0.01E-999999999);
+}

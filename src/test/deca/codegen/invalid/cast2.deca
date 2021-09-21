@@ -1,0 +1,16 @@
+// Description:
+//    Cast d'une class vers la superclasse
+//
+// Resultats:
+//    Erreur : Cast non valide effectue.
+//
+
+class A {}
+class B extends A {}
+class C extends B {}
+class D extends C {}
+
+{
+    A a = new A();
+    D b = (D)(a);
+}

@@ -1,0 +1,12 @@
+// Description:
+//    Division d'un float par 0
+//
+// Resultats:
+//    Erreur : Une opération a dépassé la capacité maximale des flottants.
+//
+
+{
+   float i = 5.2;
+   i = i/0;
+}
+

@@ -1,0 +1,14 @@
+// Description:
+//    Programme testant la l'utilisation de variable non initialisee.
+//
+// Resultats:
+//	  test_context : erreur ligne 13
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	int i;
+	int j = i;
+    print(j);
+}

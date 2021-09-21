@@ -1,0 +1,28 @@
+// Description:
+//      Test de déclaration d'objet dans un calcul d'expression    
+//
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    49
+//    49
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    B b = new B();
+}
+
+class B {
+    int x = 10;
+}
+
+{
+    int i = 1+(1+(1+(1+(1+(1+(new A()).b.x+(1+(1+(1+((new A()).b.x+(1+(1+(1+(1+(1+(1+(1+(1+(1+(1+(new A()).b.x)))))))))))))))))));
+    println(i);
+    println(1+(1+(1+(1+(1+(1+(new A()).b.x+(1+(1+(1+((new A()).b.x+(1+(1+(1+(1+(1+(1+(1+(1+(1+(1+(new A()).b.x))))))))))))))))))));
+}

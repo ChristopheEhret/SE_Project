@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant une mauvaise operation.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 16 : Modulo operator 
+//	  must be applied to two expression of int type
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	1 % "string";
+}

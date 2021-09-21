@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant une mauvaise affectation.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 16 : RValue's 
+//	  type is not compatible with the expected type
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	boolean b = readInt();
+}

@@ -1,0 +1,71 @@
+// Description:
+//    PONG version déca GBA
+//
+// Resultats:
+//    Un pong.
+//
+// Historique:
+//    cree le 25/01/2021
+
+{		
+	int x = 5;
+	int y = 5;
+	int sx = 1;
+	int sy = 1;
+	int usery = 5;
+	int keys;
+	int i;
+	
+	while(true) {
+
+		i = 1;
+		while(i<19) {
+			if(usery<i && i<usery+5) {
+				display("|", i, 0);
+			} else {
+				display(" ", i, 0);
+			}
+			display("|", i, 29);
+			i = i+1;
+		}
+		i = 0;
+		while(i<29) {
+			display("-", 0, i);
+			display("-", 19, i);
+			i = i+1;
+		}
+
+		keys = getKey();
+		if(keys==64) { // UP
+			usery = usery - 1;
+		}  else if(keys==128) { // DOWN
+			usery = usery + 1;
+		}
+
+		if(x>=28) {
+			sx = -sx;
+		}
+		if(y<=1 || y>=18) {
+			sy = -sy;
+		}
+
+		if(x==1) {
+			if(usery<y && y<usery+5) {
+				sx = -sx;
+			} else {
+				display("PERDU!", 8, 12);
+				while(true) {}
+			}
+		}
+
+		display(" ", y, x);
+		x = (x+sx+30)%30;
+		y = (y+sy+20)%20;
+		display(".", y, x);
+
+		keys = 0;
+		while(keys<15000) {
+			keys = keys+1;
+		}
+	}
+}

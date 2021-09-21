@@ -1,0 +1,16 @@
+// Description:
+//    Programme testant des declarations de variables.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  aucun
+//
+// Historique:
+//    cree le 10/01/2020
+
+{
+	int x,y = 12.0f,z=true;
+}

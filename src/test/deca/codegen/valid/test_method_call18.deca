@@ -1,0 +1,31 @@
+// Description:
+//    Programme testant l'appel de méthode récursive
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    3628800
+//    3628800
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    int fact(int i) {
+        if(i <= 1) {
+            return 1;
+        }
+
+        return i * fact(i-1);
+    }
+}
+
+{
+    A a = new A();
+
+    int i = a.fact(10);
+    println(i);
+    println(a.fact(10));
+}

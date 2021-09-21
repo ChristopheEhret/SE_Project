@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant une mauvaise expression.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 15 : Condition's type must be boolean
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	if(1) {
+	}
+}

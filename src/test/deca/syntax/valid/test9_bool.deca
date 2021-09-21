@@ -1,0 +1,19 @@
+// Description:
+//    Programme testant la reconnaissance des booleens par l'analyseur lexical.
+// 	  Les "println" ne servent qu'a former une structure valide de programme.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    true
+//	  false
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	println(true);
+	println(false);
+}

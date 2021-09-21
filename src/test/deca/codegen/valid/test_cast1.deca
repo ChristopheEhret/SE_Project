@@ -1,0 +1,21 @@
+// Description:
+//    Programme testant un cast int ---> int
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    10
+//    10
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    int i = 10;
+    int j = (int)(i);
+
+    println(j);
+    println((int)(i));
+}

@@ -1,0 +1,19 @@
+// Description:
+//    While
+//
+// Resultats:
+//    OK
+//
+// Historique:
+//    cree le 12/01/2021
+
+// Un exemple de programme Deca
+
+
+{
+	while(45<7) {
+		println("KO");
+	}
+	println("OK");
+}
+

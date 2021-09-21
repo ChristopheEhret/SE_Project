@@ -1,0 +1,45 @@
+// Description:
+//    Programme testant les corps de classe.
+//	  Le code n'a pas trop de sens, c'est juste pour 
+// 	  tester un peu toutes les possibilites
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON // a cause de 'asm'
+//
+// Resultats:
+// 	  0.0
+//
+// Historique:
+//    cree le 15/01/2020
+
+class A {
+}
+
+class B {
+	void f1() {
+	}
+	void f2(int p1) asm ("test");
+	int a;
+	protected float b;
+	boolean c, d=true,e,f,g=false;
+	float h;
+	int sum1(int p1, int p2) {
+		println("Corps explicite methode 1");
+		return p1+p2;
+	}
+	protected string i,j="chaine";
+	float sum2(int p1, float p2) {
+		println("Corps explicite methode 2");
+		return p1+p2;
+	}
+	boolean f3(int p1, boolean p2, string p3) {
+		boolean inner_var = p2;
+		println("Corps explicite methode 3");
+		return p1 == 0 || inner_var;
+	}
+	void f4(A a) {
+		println("Corps explicite methode 4");
+		return null;
+	}
+}

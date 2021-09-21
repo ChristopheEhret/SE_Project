@@ -1,0 +1,21 @@
+// Description:
+//    Programme testant tous les lexemes suivants, etape : hello world :
+//		PRINT, PRINTLN, PRINTLNX, PRINTX
+//		COMMA, OPARENT, CPARENT, OBRACE, CBRACE, SEMI
+//		STRING_CAR, STRING, MULTI_LINE_STRING, 
+//		COMMENT, MONOCOMMENT
+//
+// Resultats:
+//    	ligne 15 : Erreur de parenthesage
+//
+// Historique:
+//    cree le 06/01/2021
+
+{
+print("print() \\ ","123456879\"");;
+printx)(;
+/*  *test commentaire   ***** 
+*\*k/*
+*/
+
+println(" multiline string \n second line");}

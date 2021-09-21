@@ -1,0 +1,13 @@
+// Description:
+//    Dépassement de la pile dans une expression.
+//	  À compiler avec `decac -r 4 <nom.deca>`
+//	  À exécuter avec la commande `ima -p 2 <nom.ass>`
+//
+// Resultats:
+//    Erreur : La pile est pleine.
+//
+
+{
+   println((1+1)*((2+2)*((3+3)*((4+4)*(5+5)))));
+}
+

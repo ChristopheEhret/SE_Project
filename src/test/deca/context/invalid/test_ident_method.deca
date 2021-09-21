@@ -1,0 +1,23 @@
+// Description:
+//    Programme testant la declaration d'une methode avec un identificateur qui existe déjà pour un champ
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+// Resultats:
+//    test_context : erreur ligne 14 : The identifier x already exists and it is not an method
+class A  {
+	int x;
+}
+
+class B extends A {
+	int x(){
+		return 2;
+	}
+}
+
+{
+	A a = new A();
+	println("hello");
+	
+}

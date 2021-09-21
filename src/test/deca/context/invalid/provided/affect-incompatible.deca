@@ -1,0 +1,21 @@
+// Description:
+//    Affectation et typage
+//
+// Resultats:
+//    Pout l'instant : erreur de syntaxe.
+//    Comme on a implémenté que le hello world, les tokens int et boolean ne seront pas reconnus. 
+//    De plus, la déclaration de variable et l'affectation n'a pas non plus été implémentée.
+//    C'est pour cela qu'il n'y a pas de tests invalides pour l'étape B pour l'instant : aucun programme écrivable pour l'instant sera invalide contextuellement si il est valide syntaxiquement (pas de token de boolean implémenté).
+//
+//    Ligne 15: Affectation de types incompatibles.
+// 
+// Historique:
+//    cree le 01/01/2021
+
+{
+   int a;
+   boolean b;
+
+   // Doit etre refuse.
+   a = b;
+}

@@ -1,0 +1,214 @@
+// Description:
+//    Test sur les opérations sur les booléens
+//
+// Resultats:
+// 29 fois la ligne "ok"
+// 
+// Historique:
+//    cree le 15/01/2021
+
+{
+
+	if(true) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(!true) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(true && true) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(true && false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(false && true) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(false && false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(true || true) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(true || false) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(false || true) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(false || false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(true == true) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(true == false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(false == true) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(false == false) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(true || false == true) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(true && false == false) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+	
+
+	if(true == true || false) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+	
+
+	if(false == true && true) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+	
+
+
+	if(true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true)))))))))))))))) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+	
+
+	if(true && (true && (true && (true && (true && (true && (true && (true && (true && (false && (true && (true && (true && (true && (true && (true)))))))))))))))) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (false)))))))))))))))) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(false && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (true && (false)))))))))))))))) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+	
+
+	if(false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false)))))))))))))))) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (true)))))))))))))))) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(false || (false || (false || (true || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false)))))))))))))))) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(true || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false || (false)))))))))))))))) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(true == false == true == false == true == false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(true != false != true != false != true != false) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+}

@@ -1,0 +1,62 @@
+// Description:
+//    Test de la méthode equals
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    6 fois la ligne "ok"
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {}
+
+class B extends A {}
+
+class C {}
+
+{
+    A a = new A();
+    A a2 = a;
+    B b = new B();
+    A b2 = b;
+    C c = new C();
+
+    if(a.equals(a2)) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+    
+    if(a2.equals(a)) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(b.equals(b2)) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(b.equals(a)) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(c.equals(c)) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(c.equals(a)) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+}

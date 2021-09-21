@@ -1,0 +1,12 @@
+// Description:
+//    Lit un entier sur l'entrée standard dans une expression.
+//
+// Resultats:
+//    Le nombre en question * 2 + 1
+//
+
+{
+	int x = 2*readInt()+1;
+   	println(x);
+}
+

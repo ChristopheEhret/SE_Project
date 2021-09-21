@@ -1,0 +1,51 @@
+// Description:
+//    Test de programme legerement complexe
+//	  Calcule le plus grand entier palindrome qui est le 
+//		produit de 2 entiers a 3 chiffres :
+//    https://projecteuler.net/problem=4
+//
+// Resultats:
+//    906609
+// 
+// Historique:
+//    cree le 16/01/2021
+
+{
+	int n1=100,n2;
+	int temp;
+	int u,d,c; 		// unites, dizaines, centaines
+	int um,dm,cm;	// idem mais en milliers
+	int prod,max=1;
+	
+	
+	while(n1<=999){
+		n2 = n1;
+		while(n2<=999){
+			prod = n1 * n2;
+			u = prod%10;
+			d =  (prod%100-prod%10)/10;
+			c =  (prod%1000-prod%100)/100;
+			um = (prod%10000-prod%1000)/1000;
+			dm = (prod%100000-prod%10000)/10000;
+			cm = (prod-prod%100000)/100000;
+			
+			if(cm == 0) {
+				if( u==dm && d==um){
+					if(max<prod) {
+						max = prod;
+					}
+				}
+			} else {
+				if( u==cm && d==dm && c==um){
+					if(max<prod) {
+						max = prod;
+					}
+				}
+			}
+			
+			n2 = n2 + 1;
+		}
+		n1 = n1 + 1;
+	}
+	println(max);
+}

@@ -1,0 +1,19 @@
+// Description:
+//    Programme verifiant qu'une methode void ne peut rien retourner
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 17
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A  {
+	protected int x ;
+	void getX(){
+		return this.x;
+	}
+}

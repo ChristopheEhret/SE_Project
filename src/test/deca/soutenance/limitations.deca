@@ -1,0 +1,27 @@
+// Description:
+//    Support de demonstration pour la soutenance : nombre d'or
+//
+// Historique :
+//  28/01/2021
+
+class A {
+    int test() { return 0; }
+    int x = this.test();
+    void affiche() { println("x : ",x); }
+}
+
+/* solution : */
+class B {
+    int test() { return 0;}
+}
+
+class C {
+    B b = new B() ;
+    int x = b.test() ;
+}
+
+
+{
+    A a = new A();
+    a.affiche();
+}

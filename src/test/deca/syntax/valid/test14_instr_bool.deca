@@ -1,0 +1,40 @@
+// Description:
+//    Programme testant les instructions sur les booleens.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  falsetrue		// println(false,true) : idem pour la suite
+//    truetruetruefalse
+//    truefalsefalsefalse
+//	  truefalse
+//	  falsetrue
+//    falsefalsetrue
+//    falsetruefalse
+//    truefalsetrue
+//	  truetruefalse
+//    true
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	// declarations simples
+	boolean	t=true ,f = false;
+	boolean res;
+	
+	println(!t,!f);
+	println(t || t,t || f,f || t,f || f);
+	println(t && t,t && f,f && t,f && f);
+	println(1==1,1==2);
+	println(1!=1,1!=2);
+	println(1<1,1<0,1<2);
+	println(1>1,1>0,1>2);
+	println(1<=1,1<=0,1<=2);
+	println(1>=1,1>=0,1>=2);
+	
+	res = f || ( t && !f);	// true
+	println(res);
+}

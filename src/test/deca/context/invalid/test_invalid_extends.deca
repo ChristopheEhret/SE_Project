@@ -1,0 +1,20 @@
+// Description:
+//    Programme verifiant qu'il est impossible d'étendre autre chose qu'une classe 
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 14 : La superclass de A n'est pas de type class
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A extends int {
+	int x = 5 ;
+	int getX(){
+		return x;
+	}
+}
+

@@ -1,0 +1,29 @@
+// Description:
+//    Programme testant l'instruction instanceof
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 26 (L'opérande gauche n'est pas une classe)
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	float y;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		return x;
+	}
+}
+{
+	A a = new A();	
+	if(9 instanceof A){
+		println("true");
+	}
+}

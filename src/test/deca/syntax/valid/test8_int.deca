@@ -1,0 +1,37 @@
+// Description:
+//    Programme testant la reconnaissance des entiers par l'analyseur lexical.
+// 	  Les "println" ne servent qu'a former une structure valide de programme.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    0
+//    1
+//    2
+//    3
+//    4
+//    5
+//    6
+//    7
+//    8
+//    9
+//	  1234567890
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	println(0);
+	println(1);
+	println(2);
+	println(3);
+	println(4);
+	println(5);
+	println(6);
+	println(7);
+	println(8);
+	println(9);
+	println(1234567890);
+}

@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant les declarations d'attributs.
+//	  Etape(s) : A
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//	  Contextuellement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 18 : no viable alternative at input 'public string i'
+//
+// Historique:
+//    cree le 17/01/2020
+
+class A {
+	public string i;
+}

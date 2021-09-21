@@ -1,0 +1,19 @@
+// Description:
+//    Programme testant un parametre de type void
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+// Resultats:
+//    test_context : erreur ligne 10 : Cannot declare a parameter of type void
+class A  {
+	int getX(void a){
+		return 2;
+	}
+}
+
+{
+	A a = new A();
+	println("hello");
+	
+}

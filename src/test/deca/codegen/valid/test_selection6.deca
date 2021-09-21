@@ -1,0 +1,61 @@
+// Description:
+//    Programme testant la sélection d'attributs dans une classe
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+// ok ok 1.85000e+01 20
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    boolean x = true;
+    float y = 5;
+    int z = 10;
+}
+
+class B {
+    A a = new A();
+    B b;
+}
+
+{
+    B b = new B();
+    boolean t = true;
+    boolean f = false;
+    int i = 2;
+    float j = 3;
+
+    b.b = new B();
+    b.b.b = new B();
+    b.b.b.b = new B();
+    b.b.b.b.b = new B();
+    b.b.b.b.b.b = new B();
+    b.b.b.b.b.b.b = new B();
+    b.b.b.b.b.b.b.b = new B();
+    b.b.b.b.b.b.b.b.b = new B();
+    b.b.b.b.b.b.b.b.b.b = new B();
+
+    b.b.b.b.b.b.b.b.b.b.a.x = (true == false) || (50 > (1 + 2 * (b.b.b.b.b.b.b.b.b.b.a.y))) && (t == f); 
+    if(b.b.b.b.b.b.b.b.b.b.a.x) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b.b.b.b.b.b.b.b.b.b.a.x = !b.b.b.b.b.b.b.b.b.b.a.x && ((false == true != b.b.b.b.b.b.b.b.b.b.a.x) || !b.b.b.b.b.b.b.b.b.b.a.x);
+    if(b.b.b.b.b.b.b.b.b.b.a.x) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b.b.b.b.b.b.b.b.b.b.a.y = 1 + ((b.b.b.b.b.b.b.b.b.b.a.y / i) * j) + b.b.b.b.b.b.b.b.b.b.a.z;
+    b.b.b.b.b.b.b.b.b.b.a.z = 1 + (((b.b.b.b.b.b.b.b.b.b.a.z / i) * 2) + 7) + i;
+
+    println(b.b.b.b.b.b.b.b.b.b.a.y);
+    println(b.b.b.b.b.b.b.b.b.b.a.z);
+}

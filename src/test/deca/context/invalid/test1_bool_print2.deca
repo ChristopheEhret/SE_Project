@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant l'affichage d'un booleen.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    test_context : erreur ligne 17 : Cannot
+//	  print anything that is not an int, a float or a string
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	println(false);
+}

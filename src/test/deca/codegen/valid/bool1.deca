@@ -1,0 +1,20 @@
+// Description:
+//    Test sur les booléens
+//
+// Resultats:
+//  109876543
+// 
+// Historique:
+//    cree le 15/01/2021
+
+{
+   int test = 10;
+   while(test==0 || test!=2) {
+   		println(test);
+   		test = test - 1;
+   }
+   if((test = 3) == 3) {
+      println("Hello");
+   }
+}
+

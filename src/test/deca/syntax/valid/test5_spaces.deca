@@ -1,0 +1,24 @@
+// Description:
+//    Programme avec espaces
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    Hello"
+//
+// Historique:
+//    cree le 06/01/2021
+
+
+//	 			
+
+
+{
+	println( 
+	"Hello"
+	
+					)	;
+								
+}

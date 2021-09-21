@@ -1,0 +1,27 @@
+// Description:
+//    Test de programme legerement complexe
+//	  Calcule la difference entre le carre de la 
+//		somme et la somme des carres des entiers de 1 a 100 :
+//    https://projecteuler.net/problem=6
+//
+// Resultats:
+//    25164150
+// 
+// Historique:
+//    cree le 16/01/2021
+
+{
+	int somme = 0;
+	int a=1,b;
+	
+	while(a < 100) {
+		b = a+1;
+		while(b<=100) {
+			somme = somme + 2*a*b;
+			b = b + 1;
+		}
+		a = a + 1;
+	}
+	
+	println(somme);
+}

@@ -1,0 +1,38 @@
+// Description:
+//    Programme testant un cast implicite objet ---> superclasse
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    void test() {
+        println("ko");
+    }
+}
+
+class B extends A {
+    void test() {
+        println("ko");
+    }
+}
+
+class C extends B {}
+class D extends C {
+    void test() {
+        println("ok");
+    }
+}
+
+{
+    A a = new D();
+    B b = (B)(a);
+
+    b.test();
+}

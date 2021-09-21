@@ -1,0 +1,20 @@
+// Description:
+//    Programme testant une instruction invalide.
+//	  !!! Normalement la verification des lvalues 
+//    se fait dans l'analyse syntaxique et non la decoration 
+// 	  de l'arbre !!!
+//	  Etape(s) : A et B (et C ??)
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+//	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 19 : left-hand side of 
+//		assignment is not an lvalue
+//
+// Historique:
+//    cree le 10/01/2021
+
+{
+	3=4;
+}

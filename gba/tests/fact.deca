@@ -1,0 +1,15 @@
+{
+    int input = 7;
+    int save_input;
+    int res = 0;
+
+    res = 1;
+    save_input = input;
+
+    while(input > 1) {
+        res = res * input;
+        input = input - 1;
+    }
+
+    println(save_input, "! = ", res);
+}

@@ -1,0 +1,11 @@
+// Description:
+//    Programme testant la syntaxe d'un print
+//
+// Resultats:
+//    	ligne 10 : Erreur de syntaxe : point virgule non attendue
+// 		test_lex ne doit pas donner d'erreur		
+// Historique:
+//    cree le 07/01/2021
+{
+	println("kdfl" , ;  );
+}

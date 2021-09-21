@@ -1,0 +1,17 @@
+// Description:
+//    Appel d'une méthode qui n'a pas de valeur de retour
+//
+// Resultats:
+//   Erreur : Sortie de la fonction A.test sans instruction de retour
+//
+
+class A {
+    int test() {
+
+    }
+}
+
+{
+    A a = new A();
+    a.test();
+}

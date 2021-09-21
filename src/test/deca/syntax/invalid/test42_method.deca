@@ -1,0 +1,18 @@
+// Description:
+//    Programme testant les corps de methodes.
+//	  Etape(s) : A
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//	  Contextuellement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 17 : missing '(' at '"test"'
+//
+// Historique:
+//    cree le 17/01/2020
+
+class A {
+	int fct(int a)
+		asm "test";
+}

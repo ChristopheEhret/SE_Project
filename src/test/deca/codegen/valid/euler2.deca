@@ -1,0 +1,31 @@
+// Description:
+//    Test de programme legerement complexe
+//	  Calcule la somme des termes pairs de la suite 
+//		de Fibonacci inferieurs a 4 millions :
+//    https://projecteuler.net/problem=2
+//
+// Resultats:
+//    4613732
+// 
+// Historique:
+//    cree le 16/01/2021
+
+{
+	int somme = 0;
+	int t1=1, t2=1;
+	int temp;	// variable pour les calculs intermediaires
+	
+	while(t2<4000000) {
+		// calcul du terme suivant
+		temp = t2;
+		t2 = t1 + t2;
+		t1 = temp;
+		
+		// verification parite
+		if(t2%2 == 0) {
+			somme = somme + t2;
+		}
+	}
+	
+	println(somme);
+}

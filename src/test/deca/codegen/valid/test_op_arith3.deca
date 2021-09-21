@@ -1,0 +1,50 @@
+// Description:
+//    Programme testant des declarations de variables et des instructions (sum et mult).
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	-6 
+//  8
+//  5.00000e+00
+//  3.00000e+00
+//  ok
+//  ok
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	// declarations simples
+	int i, j, k;
+	float f, g, h;
+    boolean a=true, b=false, c;
+
+	i = (1+(1+((k=3-2)+(1+(1+(1+((k = 1)+(1-(1-(1-(1-(1-(1*((k=3*2/6)*(1*(1*(1+(1+(1+(1+((k=1)+(1+(1+(1+(1+(1+(1+(1+((k=6/6)+(1+(1%(1/(1/(1/(1*1)))))))))))))))))))))))))))))))))));
+    j = (((((((((((((((((((((((((((((((((((1*1)/1)/1)/1)*1)*(k=3*2/6))*1)*1)*1)*1)%(k=3*2/6))-1)-1)-1)-(k=1))-1)-1)-1)-1)+1)+(k=3-2))+1)+1)+1)+1)+1)+1)+1)+1)+1)+1)+1)+1)+1)+1);
+
+    f = (1.0+(1.0+(1.0+((h=1)+(1.0-((h=1)-(1.0-(1.0-(1.0/(1.0/(1.0/(1.0/(1.0*((k=1)*(1.0*1.0)))))))))))))));
+    g = (((((((((((((((1.0*1.0)*1.0)*1.0)/(h=6/(2.0*3)))/1.0)-1.0)-1.0)-1.0)-(k=1))+1.0)+1.0)+(h=1))+1.0)+1.0)+1.0);
+
+    a = (a||(b||(a&&(b&&(a==(b==(a!=(b!=(c=true)))))))));
+    b = i==j && i<j || i<=j && i>j || i>=j && i!=j;
+
+    println(i);
+    println(j);
+    println(f);
+    println(g);
+
+    if(a) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+}

@@ -1,0 +1,21 @@
+// Description:
+//    Programme testant simplement la déclaration et l'instanciation de variables
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    6.30000e+01;
+//    6.30000e+01;
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    float i = 10;
+
+    println(i+(i+(1+(i+(1+(i+(i+(1+(i)))))))));
+    i = i+(i+(1+(i+(1+(i+(i+(1+(i))))))));
+    println(i);
+}

@@ -1,0 +1,27 @@
+// Description:
+//    Programme testant la visibilité d'un attribut
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 26 (L'attribut x de la class A est protégé, il n'est donc pas visible depuis une classe extérieure)
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	float y;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		return x;
+	}
+}
+{
+	A a = new A();	
+	a.x = 5;
+}

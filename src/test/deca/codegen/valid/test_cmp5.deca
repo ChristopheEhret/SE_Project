@@ -1,0 +1,286 @@
+// Description:
+//    Programme testant les comparaisons entre flottants dans des variables avec assignations
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+// 38 fois la ligne "ok"
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    float deux = 2.0, mdeux = -2.0;
+    float trois = 3.0, mtrois = -3.0;
+    float cinq = 5.0, mcinq = -5.0;
+    float dix = 10.0, mdix = -10;
+    boolean b;
+
+    b = dix > trois;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = deux > cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = cinq > cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = dix >= trois;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = deux >= cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = cinq >= cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mdix > mtrois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mdeux > mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mcinq > mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mdix >= mtrois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mdeux >= mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mcinq >= mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = dix < trois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = deux < cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = cinq < cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = dix <= trois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = deux <= cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = cinq <= cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mdix < mtrois;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mdeux < mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mcinq < mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mdix <= mtrois;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mdeux <= mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mcinq <= mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = dix == trois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = deux == cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = cinq == cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mdix == mtrois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mdeux == mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mcinq == mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mdeux < dix && cinq == cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mdeux >= dix && cinq <= cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mcinq == dix && trois > mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = deux < mcinq && mdeux <= mdix;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = mdeux < dix || cinq == cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mdeux >= dix || cinq <= cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = mcinq == dix || trois > mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = deux < mcinq || mdeux <= mdix;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+}

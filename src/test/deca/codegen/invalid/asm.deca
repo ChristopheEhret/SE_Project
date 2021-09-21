@@ -1,0 +1,21 @@
+// Description:
+//    Programme testant la methode asm
+//	  Etape(s) : A, B, C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	Erreur IMA
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A {
+	void Asm() asm("
+		");
+}
+{
+	A a = new A();
+	a.Asm();
+}

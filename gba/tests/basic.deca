@@ -1,0 +1,12 @@
+{
+	int i = 7%(1+(1+(1))*11/3-4);
+	boolean b = i>6;
+
+	println("i = ", i);
+
+	if(!b && i>2) {
+		println("i est compris entre 3 et 6 compris.");
+	} else {
+		println("i n'est pas compris entre 3 et 6 compris.");
+	}
+}

@@ -1,0 +1,19 @@
+// Description:
+//    Affichage d'un flottant.
+//
+// Resultats:
+//    1.28000e+01
+//	  0x1.99999ap+3
+//
+// Historique:
+//    cree le 11/01/2021
+
+// Un exemple de programme Deca
+
+
+{
+	print(12.8);
+	println();
+	printlnx(12.8);
+}
+

@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant un flottant invalide.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+//	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 16 : seuls les flottants hexadecimaux 
+//		ont un 'p' : no viable alternative at input 'p12'
+//
+// Historique:
+//    cree le 10/01/2021
+
+{
+	print(1.2p12);
+}

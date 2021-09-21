@@ -1,0 +1,48 @@
+// Description:
+//    Programme testant la sélection d'attributs dans une classe
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+// ok ok 1.85000e+01 20
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    boolean x = true;
+    float y = 5;
+    int z = 10;
+}
+
+{
+    A a = new A();
+    boolean b;
+    boolean t = true;
+    boolean f = false;
+    int i = 2;
+    float j = 3;
+
+    a.x = (true == false) || (50 > (1 + 2 * (a.y))) && (t == f); 
+    if(a.x) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    a.x = !a.x && ((false == true == a.x) || !a.x);
+    //a.x = !a.x;
+    if(a.x) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    a.y = 1 + ((a.y / i) * j) + a.z;
+    a.z = 1 + (((a.z / i) * 2) + 7) + i;
+
+    println(a.y);
+    println(a.z);
+}

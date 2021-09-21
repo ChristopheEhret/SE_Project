@@ -1,0 +1,34 @@
+// Description:
+//    Programme testant calculs avec variables (sum et mult).
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	-6 
+//  8
+//  5.00000e+00
+//  3.00000e+00
+//
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	// declarations simples
+	int i = 1, j = 1;
+	float f = 1.0, g = 1.0;
+
+	i = (i+(i+(i+(i+(i+(i+(i+(i-(i-(i-(i-(i-(i*(i*(i*(i*(i+(i+(i+(i+(i+(i+(i+(i+(i+(i+(i+(i+(i+(i+(i%(i/(i/(i/(i*i)))))))))))))))))))))))))))))))))));
+    j = (((((((((((((((((((((((((((((((((((j*j)/j)/j)/j)*j)*j)*j)*j)*j)*j)%j)-j)-j)-j)-j)-j)-j)-j)-j)+j)+j)+j)+j)+j)+j)+j)+j)+j)+j)+j)+j)+j)+j)+j)+j);
+
+    f = (f+(f+(f+(f+(f-(f-(f-(f-(f/(f/(f/(f/(f*(f*(f*f)))))))))))))));
+    g = (((((((((((((((g*g)*g)*g)/g)/g)-g)-g)-g)-g)+g)+g)+g)+g)+g)+g);
+
+    println(i);
+    println(j);
+    println(f);
+    println(g);
+
+}

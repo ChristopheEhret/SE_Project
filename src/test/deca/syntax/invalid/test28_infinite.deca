@@ -1,0 +1,18 @@
+// Description:
+//    Programme testant les flottants infinis.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//	  Contextuellement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur java : literal values cannot be infinite
+//	  
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	println(0X0123456789ABCDEFabcdef.0123456789ABCDEFabcdefP0123456789);
+}

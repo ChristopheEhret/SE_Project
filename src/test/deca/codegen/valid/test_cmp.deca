@@ -1,0 +1,264 @@
+// Description:
+//    Programme testant les comparaisons entre entiers
+//
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+// 38 fois la ligne "ok"
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    if(10 > 3) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(2 > 5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(5 > 5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(10 >= 3) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(2 >= 5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(5 >= 5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(10 > -3) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(2 > -5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(5 > -5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(10 >= -3) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(2 >= -5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(5 >= -5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(10 < 3) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(2 < 5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(5 < 5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(10 <= 3) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(2 <= 5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(5 <= 5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(10 < -3) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(2 < -5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(5 < -5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(10 <= -3) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(2 <= -5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(5 <= -5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(10 == 3) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(2 == 5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(5 == 5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(10 == -3) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(2 == -5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(5 == -5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(2 < 10 && 5 == 5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(2 >= 10 && 5 <= 5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(5 == 10 && 3 > -5) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(2 < -5 && -2 <= -10) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+
+    if(2 < 10 || 5 == 5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(2 >= 10 || 5 <= 5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+
+    if(5 == 10 || 3 > -5) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(2 < -5 || -2 <= -10) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+}

@@ -1,0 +1,18 @@
+// Description:
+//    Programme testant  une mauvaise operation.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 16 : Not operator 
+//	  must be applied on a boolean expression
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	float a;
+	!a;
+}

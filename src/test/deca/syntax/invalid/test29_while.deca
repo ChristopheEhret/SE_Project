@@ -1,0 +1,19 @@
+// Description:
+//    Programme testant une boucle while sans expression.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 15 : mismatched input ')' expecting...
+//
+// Historique:
+//    cree le 11/01/2021
+
+{
+	while(){
+	}
+	
+	println("Hello");
+}

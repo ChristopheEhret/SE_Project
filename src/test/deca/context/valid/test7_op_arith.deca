@@ -1,0 +1,27 @@
+// Description:
+//    Programme testant des declarations de variables et des instructions (sum et mult).
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	// declarations simples
+	int i, j;
+	float f, g;
+
+	i + j;	// Deux int
+	f - i;	// Float & int -> ConvFloat
+	j * f;	// Int & float -> ConvFloat
+	g / f;	// Deux float
+	-i;
+	-g;
+
+	i % j;
+}

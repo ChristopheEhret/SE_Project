@@ -1,0 +1,15 @@
+// Description:
+//    Test d'inclusion
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    Test Include : 5
+//
+// Historique:
+//    cree le 12/01/2021
+#include "test_include_part1.incl"
+#include "test_include_part2.incl"
+#include "test_include_part3.incl"

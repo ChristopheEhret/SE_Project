@@ -1,0 +1,23 @@
+// Description:
+//    Programme testant que l'initialisation des fields ne se fait pas tant qu'un objet n'a pas été instancié
+//    Si c'était le cas, il y aurait une erreur de StackOverflow dès l'instruction "A a;"
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    ok
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A  {
+    int x = 0;
+    A a = new A();
+}
+
+{
+	A a;
+    println("ok");
+}

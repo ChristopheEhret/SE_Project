@@ -1,0 +1,42 @@
+// Description:
+//    Programme testant l'héritage d'une classe ( en particulier 
+// 	  qu'elle hérite bien des méthodes et attributs de sa classe mère mais aussi des classes plus hautes)
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    52.3
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	int x = 5 ;
+	int getX(){
+		return x;
+	}
+}
+
+class B extends A {
+	boolean b = true;
+	boolean getB(){
+		return b;
+	}	
+}
+
+class C extends B {
+	float f = 2.3;
+	float getF(){
+		return f;
+	}
+}
+
+{
+	
+	C c = new C();
+	if(c.getB()) {
+		println(c.getX(),c.getF());
+	}
+}

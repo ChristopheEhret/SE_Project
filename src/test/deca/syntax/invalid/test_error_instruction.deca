@@ -1,0 +1,12 @@
+// Description:
+//    Programme testant la syntaxe pour une liste d'instruction 
+//
+// Resultats:
+//    	ligne 11 : erreur de syntaxe ( on doit avoir un ';' qui sépare les instructions )
+//		test_lex ne doit pas donner d'erreur
+//
+// Historique:
+//    cree le 07/01/2021
+{
+	println(" first instruction "),println(" second instruction ");
+}

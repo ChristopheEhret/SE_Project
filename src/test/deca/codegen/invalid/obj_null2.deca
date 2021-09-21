@@ -1,0 +1,21 @@
+// Description:
+//    Vérifie si une erreur est bien levée lors du déréférencement d'un objet null
+//
+// Resultats:
+//    Erreur : Dereferencement d'un objet null
+//
+
+class A {
+    A a;
+    int x = 0;
+
+    void test() {
+        a.x;
+    }
+}
+
+{
+    A a = new A();
+
+    a.test();
+}

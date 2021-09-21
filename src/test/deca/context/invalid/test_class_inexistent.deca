@@ -1,0 +1,16 @@
+// Description:
+//    Programme verifiant qu'il est impossible d'utiliser une classe qui n'existe pas
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 15 : L'identificateur de type 'A' n'est pas déclaré
+//
+// Historique:
+//    cree le 22/01/2021
+
+{
+	A a = new A();
+}

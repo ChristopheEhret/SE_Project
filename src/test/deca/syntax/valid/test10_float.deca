@@ -1,0 +1,159 @@
+// Description:
+//    Programme testant la reconnaissance des petits flottants.
+// 	  Les "println" ne servent qu'a former une structure valide de programme.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    des flottants sur la sortie standard
+//	  
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	/***** flottants decimaux *****/
+	
+	// flottants decimaux 1
+	println(0.0);
+	println(0.120);
+	println(034.0);	// le zero devrait etre accepte en debut de flottant
+	println(56.01289);
+	
+	// flottants decimaux 2
+	println(0.0f);
+	println(0.7890f);
+	println(01389.0f);
+	println(0359.0239f);
+	
+	// flottants decimaux 3
+	println(0.0F);
+	println(0.13490F);
+	println(01467.0F);
+	println(0168.02468F);
+	
+	//flottants decimaux exponentielle 1
+	println(0.0e0);
+	println(0.0e1);
+	println(0.0e+0);
+	println(0.0e+2);
+	println(0.0e-0);
+	println(0.0e-3);
+	println(0.0e0f);
+	println(0.0e4f);
+	println(0.0e+0f);
+	println(0.0e+5f);
+	println(0.0e-0f);
+	println(0.0e-6f);
+	println(0.0e0F);
+	println(0.0e7F);
+	println(0.0e+0F);
+	println(0.0e+8F);
+	println(0.0e-0F);
+	println(0.0e-9F);
+	
+	//flottants decimaux exponentielle 2
+	println(0.0E0);
+	println(0.0E1);
+	println(0.0E+0);
+	println(0.0E+2);
+	println(0.0E-0);
+	println(0.0E-3);
+	println(0.0E0f);
+	println(0.0E4f);
+	println(0.0E+0f);
+	println(0.0E+5f);
+	println(0.0E-0f);
+	println(0.0E-6f);
+	println(0.0E0F);
+	println(0.0E7F);
+	println(0.0E+0F);
+	println(0.0E+8F);
+	println(0.0E-0F);
+	println(0.0E-9F);
+	
+	
+	/***** flottants hexadecimaux *****/
+	
+	//flottants hexadecimaux 1
+	println(0x0.0p0);
+	println(0x0.0p+0);
+	println(0x0.0p-0);
+	println(0xA.Bp0);
+	println(0xC.Dp+1);
+	println(0xE.Fp-2);
+	println(0x0.0p0f);
+	println(0x0.0p+0f);
+	println(0x0.0p-0f);
+	println(0xa.bp3f);
+	println(0xc.dp+4f);
+	println(0xe.fp-5f);
+	println(0x0.0p0F);
+	println(0x0.0p+0F);
+	println(0x0.0p-0F);
+	println(0x0.1p6F);
+	println(0x2.3p+7F);
+	println(0x4.5p-8F);
+	
+	//flottants hexadecimaux 2
+	println(0X0.0p0);
+	println(0X0.0p+0);
+	println(0X0.0p-0);
+	println(0XA.Bp0);
+	println(0XC.Dp+1);
+	println(0XE.Fp-2);
+	println(0X0.0p0f);
+	println(0X0.0p+0f);
+	println(0X0.0p-0f);
+	println(0Xa.bp3f);
+	println(0Xc.dp+4f);
+	println(0Xe.fp-5f);
+	println(0X0.0p0F);
+	println(0X0.0p+0F);
+	println(0X0.0p-0F);
+	println(0X0.1p6F);
+	println(0X2.3p+7F);
+	println(0X4.5p-8F);
+	
+	//flottants hexadecimaux 3
+	println(0x0.0P0);
+	println(0x0.0P+0);
+	println(0x0.0P-0);
+	println(0xA.BP0);
+	println(0xC.DP+1);
+	println(0xE.FP-2);
+	println(0x0.0P0f);
+	println(0x0.0P+0f);
+	println(0x0.0P-0f);
+	println(0xa.bP3f);
+	println(0xc.dP+4f);
+	println(0xe.fP-5f);
+	println(0x0.0P0F);
+	println(0x0.0P+0F);
+	println(0x0.0P-0F);
+	println(0x0.1P6F);
+	println(0x2.3P+7F);
+	println(0x4.5P-8F);
+	
+	//flottants hexadecimaux 4
+	println(0X0.0P0);
+	println(0X0.0P+0);
+	println(0X0.0P-0);
+	println(0XA.BP0);
+	println(0XC.DP+1);
+	println(0XE.FP-2);
+	println(0X0.0P0f);
+	println(0X0.0P+0f);
+	println(0X0.0P-0f);
+	println(0Xa.bP3f);
+	println(0Xc.dP+4f);
+	println(0Xe.fP-5f);
+	println(0X0.0P0F);
+	println(0X0.0P+0F);
+	println(0X0.0P-0F);
+	println(0X0.1P6F);
+	println(0X2.3P+7F);
+	println(0X4.5P-8F);
+}

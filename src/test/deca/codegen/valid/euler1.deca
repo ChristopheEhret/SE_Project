@@ -1,0 +1,26 @@
+// Description:
+//    Test de programme legerement complexe
+//	  Calcule la somme des entiers de 1 à 1000 
+//		qui sont multiples de 3 ou 5 :
+//    https://projecteuler.net/problem=1
+//
+// Resultats:
+//    233168
+// 
+// Historique:
+//    cree le 16/01/2021
+
+{
+	int somme = 0;
+	int terme = 1;
+	
+	while(terme < 1000) {
+		if(terme%3 == 0 || terme%5 == 0) {
+			somme = somme + terme;
+		}
+		
+		terme = terme + 1;
+	}
+	
+	print(somme);
+}

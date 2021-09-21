@@ -1,0 +1,32 @@
+// Description:
+//    Programme testant que l'on ne puisse pas faire un downcast implicite
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 31 : Probleme de compatibilité
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	int x = 5 ;
+	int getX(){
+		return x;
+	}
+}
+
+class B extends A {
+	string s = "gl27_test";
+	string getS(){
+		return s;
+	}	
+}
+
+{
+	
+	A a = new B();
+	B b = a;	
+}

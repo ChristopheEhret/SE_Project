@@ -1,0 +1,19 @@
+// Description:
+//    Programme testant la redeclaration de variable.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 18 : The types are 
+//	  incompatible for a Comparaison Operation
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	float a;
+	string b;
+	a > b;
+}

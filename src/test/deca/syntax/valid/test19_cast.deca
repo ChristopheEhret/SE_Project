@@ -1,0 +1,39 @@
+// Description:
+//    Programme testant la conversion de type.
+//	  Etape(s) : A, B et C (pas sur)
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  aucun
+//
+// Historique:
+//    cree le 11/01/2020
+
+{
+	int a;
+	string b;
+	boolean c;
+	float d;
+	
+	// int cast
+	a = (int) (b);
+	a = (int) (c);
+	a = (int) (d);
+	
+	// string cast
+	b = (string) (a);
+	b = (string) (c);
+	b = (string) (d);
+	
+	// boolean cast
+	c = (boolean) (a);
+	c = (boolean) (b);
+	c = (boolean) (d);
+	
+	// float cast
+	d = (float) (a);
+	d = (float) (b);
+	d = (float) (c);
+}

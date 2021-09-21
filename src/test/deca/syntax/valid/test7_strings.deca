@@ -1,0 +1,21 @@
+// Description:
+//    Programme testant la reconnaissance des chaines de caracteres par l'analyseur lexical.
+// 	  Les "println" ne servent qu'a former une structure valide de programme.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    Hello 1
+//	  "\Hello 2"
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	println("Hello 1");
+	println("\"\\Hello 2\"");
+	// tests de tous les caracteres du clavier (sauf avec les accents)
+	println("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_~#'{([-|^@)]=}+°$*%?,.;/:§!&<>");
+}

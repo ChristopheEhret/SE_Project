@@ -1,0 +1,39 @@
+// Description:
+//    Programme testant des declarations de variables et des instructions (sum et mult).
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  222		// println(2,2,2)
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	// declarations simples
+	int	i,j=0,k = 12,l,m;
+	
+	i = i + j - k;
+	i = 1 + 1 - 1;;
+	;;				// instructions vides
+	i (1 + 1) - 1;
+	i = -1;
+	
+	;;;	// devraient figurer parmi les
+	;	// declarations vides et non les instructions
+	
+	i = 4 * 3 / 2;
+	j = i * k / j;
+	
+	i = (1-1) + (1*1) * ( ((2/1)/(0+1)) - (-0) );
+	i = 19 % 7;
+	k = j % i;
+	
+	;
+	;;;;	// instructions vides
+	
+	i = j = k; // double affectation
+	println(i,j,k);
+}

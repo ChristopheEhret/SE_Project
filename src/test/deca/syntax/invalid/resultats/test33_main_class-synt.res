@@ -1,0 +1,1 @@
+./src/test/deca/syntax/invalid/test33_main_class.deca:19:0: mismatched input 'class' expecting {INT, '-', 'false', 'if', 'new', 'null', 'readInt', 'readFloat', 'print', 'println', 'printlnx', 'printx', 'return', 'this', 'true', 'while', IDENT, '(', '}', '!', ';', FLOAT, STRING}

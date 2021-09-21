@@ -1,0 +1,16 @@
+// Description:
+//    Programme testant une instruction incomplete.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+//    test_lex : pas d'erreur
+//    test_synt : erreur ligne 16 : missing ';' at '}'
+//
+// Historique:
+//    cree le 10/01/2021
+
+{
+	print("Hello")	// pas de ";"
+}

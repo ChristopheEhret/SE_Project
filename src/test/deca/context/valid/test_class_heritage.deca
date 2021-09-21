@@ -1,0 +1,35 @@
+// Description:
+//    Programme testant l'héritage
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    5
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A  {
+	int x = 5 ;
+	float y;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		return y;
+	}
+}
+class B extends A {
+	int z;
+	int getZ(){
+		return z;
+	}
+}
+{
+	A a = new A();
+	B b = new B();
+	println(b.getX());
+	
+}

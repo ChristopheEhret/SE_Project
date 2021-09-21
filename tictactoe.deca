@@ -1,0 +1,181 @@
+class Tile {
+    boolean checkedCross = false;
+    boolean checkedCircle = false;
+
+    boolean isChecked() {
+        return checkedCircle || checkedCross;
+    }
+}
+
+class Grille {
+    Tile tile1 = new Tile();
+    Tile tile2 = new Tile();
+    Tile tile3 = new Tile();
+    Tile tile4 = new Tile();
+    Tile tile5 = new Tile();
+    Tile tile6 = new Tile();
+    Tile tile7 = new Tile();
+    Tile tile8 = new Tile();
+    Tile tile9 = new Tile();
+
+    boolean play(boolean isPlayerCross, int tileId) {
+        Tile tileToCross;
+        if(tileId == 1) {
+            tileToCross = tile1;
+        } else if(tileId == 2) {
+            tileToCross = tile2;
+        } else if(tileId == 3) {
+            tileToCross = tile3;
+        } else if(tileId == 4) {
+            tileToCross = tile4;
+        } else if(tileId == 5) {
+            tileToCross = tile5;
+        } else if(tileId == 6) {
+            tileToCross = tile6;
+        } else if(tileId == 7) {
+            tileToCross = tile7;
+        } else if(tileId == 8) {
+            tileToCross = tile8;
+        } else if(tileId == 9) {
+            tileToCross = tile9;
+        } else {
+            return false;
+        }
+
+        return tryCheckTile(isPlayerCross, tileToCross);
+    }
+
+    boolean tryCheckTile(boolean isPlayerCross, Tile tile) {
+        if(tile.isChecked()) {
+            return false;
+        }
+
+        if(isPlayerCross){
+            tile.checkedCross = true;
+        } else {
+            tile.checkedCircle = true;
+        }
+
+        return true;
+    }
+
+    boolean checkWinCircle() {
+        if(tile1.checkedCircle && tile2.checkedCircle && tile3.checkedCircle) {
+            return true;
+        } else if(tile4.checkedCircle && tile5.checkedCircle && tile6.checkedCircle) {
+            return true;
+        } else if(tile7.checkedCircle && tile8.checkedCircle && tile9.checkedCircle) {
+            return true;
+        } else if(tile1.checkedCircle && tile4.checkedCircle && tile7.checkedCircle) {
+            return true;
+        } else if(tile2.checkedCircle && tile5.checkedCircle && tile8.checkedCircle) {
+            return true;
+        } else if(tile3.checkedCircle && tile6.checkedCircle && tile9.checkedCircle) {
+            return true;
+        } else if(tile1.checkedCircle && tile5.checkedCircle && tile9.checkedCircle) {
+            return true;
+        } else if(tile3.checkedCircle && tile5.checkedCircle && tile7.checkedCircle) {
+            return true;
+        }
+
+        return false;
+    }
+
+    boolean checkWinCross() {
+        if(tile1.checkedCross && tile2.checkedCross && tile3.checkedCross) {
+            return true;
+        } else if(tile4.checkedCross && tile5.checkedCross && tile6.checkedCross) {
+            return true;
+        } else if(tile7.checkedCross && tile8.checkedCross && tile9.checkedCross) {
+            return true;
+        } else if(tile1.checkedCross && tile4.checkedCross && tile7.checkedCross) {
+            return true;
+        } else if(tile2.checkedCross && tile5.checkedCross && tile8.checkedCross) {
+            return true;
+        } else if(tile3.checkedCross && tile6.checkedCross && tile9.checkedCross) {
+            return true;
+        } else if(tile1.checkedCross && tile5.checkedCross && tile9.checkedCross) {
+            return true;
+        } else if(tile3.checkedCross && tile5.checkedCross && tile7.checkedCross) {
+            return true;
+        }
+
+        return false;
+    }
+
+    void displayTile(Tile tile) {
+        if(tile.checkedCircle) {
+            print("o");
+        } else if (tile.checkedCross) {
+            print("x");
+        } else {
+            print(" ");
+        }
+    }
+
+    void show() {
+        displayTile(tile1);
+        print("|");
+        displayTile(tile2);
+        print("|");
+        displayTile(tile3);
+        println("");
+        println("------");
+        displayTile(tile4);
+        print("|");
+        displayTile(tile5);
+        print("|");
+        displayTile(tile6);
+        println("");
+        println("------");
+        displayTile(tile7);
+        print("|");
+        displayTile(tile8);
+        print("|");
+        displayTile(tile9);
+        println("");
+    }
+
+    boolean isFull() {
+        return tile1.isChecked() && tile2.isChecked() && tile3.isChecked() && tile4.isChecked() && tile5.isChecked() && tile6.isChecked() && tile7.isChecked() && tile8.isChecked() && tile9.isChecked();
+    }
+}
+
+{
+    Grille grille = new Grille();
+
+    boolean isPlayerCross = false;
+    int idTile = -1;
+    boolean win = false;
+
+    grille.show();
+
+    while(!win && !grille.isFull()) {
+        isPlayerCross = !isPlayerCross;
+
+        while(idTile < 0 || idTile > 9 || !grille.play(isPlayerCross, idTile)) {
+            if(isPlayerCross) {
+                print("Au tour des croix de jouer : ");
+            } else {
+                print("Au tour des ronds de jouer : ");
+            }
+            idTile = readInt();
+        }
+
+        grille.show();
+
+        if(isPlayerCross) {
+            win = grille.checkWinCross();
+        } else {
+            win = grille.checkWinCircle();
+        }
+    }
+
+    if(grille.isFull()) {
+        println("Egalité!");
+    } else if(isPlayerCross) {
+        println("Les croix ont gagné!!");
+    } else {
+        println("Les ronds ont gagné!!");
+    }
+}

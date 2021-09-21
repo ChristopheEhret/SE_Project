@@ -1,0 +1,21 @@
+// Description:
+//    If Then Else
+//
+// Resultats:
+//    OK
+//
+// Historique:
+//    cree le 12/01/2021
+
+// Un exemple de programme Deca
+
+
+{
+	boolean test = 5<8 || false;
+	if(test && 4>2) {
+		println("OK");
+	} else {
+		println("KO");
+	}
+}
+

@@ -1,0 +1,18 @@
+// Description:
+//    Programme testant une mauvaise operation.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 17 : The types 
+//	  are incompatible for a Boolean Operation
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	int a;
+	a || false;
+}

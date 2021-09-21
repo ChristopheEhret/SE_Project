@@ -1,0 +1,18 @@
+// Description:
+//    Programme testant une mauvaise operation.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 17 : Unary minus must 
+//	  be applied to an expression of type int or float
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	string s;
+	-s;
+}

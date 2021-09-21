@@ -1,0 +1,20 @@
+// Description:
+//    Programme testant les declarations de classes.
+//	  Etape(s) : A
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//	  Contextuellement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 19 : mismatched input 'class' expecting...
+//
+// Historique:
+//    cree le 17/01/2020
+
+{
+	
+}
+
+class A {
+}

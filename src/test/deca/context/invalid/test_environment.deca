@@ -1,0 +1,34 @@
+// Description:
+//    Programme testant que chaque classe a son propre environnement
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 33 (La méthode getY n'est pas défini dans la classe B)
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	float y;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		return y;
+	}
+}
+class B {
+	string s ;
+	string getS(){
+		return this.s;
+	}
+}
+{
+	A a = new A();	
+	B b ;
+	float f = b.getY();
+}

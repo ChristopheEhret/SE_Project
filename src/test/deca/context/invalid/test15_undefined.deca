@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant un type indefini.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 17 : L'identificateur 
+//    de type integer n'est pas déclaré dans la portée
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	integer i;
+}

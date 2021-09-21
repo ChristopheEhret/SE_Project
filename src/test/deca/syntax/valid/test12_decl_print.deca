@@ -1,0 +1,22 @@
+// Description:
+//    Programme testant des declarations de variables et des instructions (print).
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  Hello
+//	  12
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	// declarations simples
+	string s = "Hello";
+	int	i = 12;
+	
+	println(s);
+	println(i);
+}

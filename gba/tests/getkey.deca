@@ -1,0 +1,14 @@
+{
+	int current;
+	int previous;
+
+	while(true) {
+		current = getKey();
+		if(current!=previous) {
+			display("      ", 0, 0);	// on efface l'ancienne valeur
+			display("", 0, 0);			// on place le curseur en haut à gauche
+			print(current);
+		}
+		previous = current;
+	}
+}

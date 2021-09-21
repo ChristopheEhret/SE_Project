@@ -1,0 +1,90 @@
+// Description:
+//    Programme testant la déclaration et l'instanciation de plein de vairiables, dont dans une méthode pour être sur qu'il n'y ait pas de conflit
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//   10
+//   4.00000e+00
+//   2
+//   3.00000e+00
+//   7
+//   ok
+//   ok
+//   10
+//   4.00000e+00
+//   2
+//   3.00000e+00
+//   7
+//   ok
+//   ok
+//
+// Historique:
+//    cree le 20/01/2021
+
+
+class A {
+    int x = 7;
+
+    void test() {
+        int i = 10;
+        float a = 4.0;
+        int j, k = 2, l;
+        float m, n, o = 3.0;
+        boolean p = true;
+        A f = new A();
+        boolean b, c, d, e = false;
+        A g, h, q, r;
+
+        println(i);
+        println(a);
+        println(k);
+        println(o);
+        println(f.x);
+        
+        if(p) {
+            println("ok");
+        } else {
+            println("ko");
+        }
+
+        if(e) {
+            println("ko");
+        } else {
+            println("ok");
+        }
+    }
+}
+
+{
+    int i = 10;
+    float a = 4.0;
+    int j, k = 2, l;
+    float m, n, o = 3.0;
+    boolean p = true;
+    A f = new A();
+    boolean b, c, d, e = false;
+    A g, h, q, r;
+
+    println(i);
+    println(a);
+    println(k);
+    println(o);
+    println(f.x);
+    
+    if(p) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(e) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    f.test();
+}

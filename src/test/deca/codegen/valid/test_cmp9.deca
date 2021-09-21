@@ -1,0 +1,294 @@
+// Description:
+//    Programme testant les comparaisons entre entiers dans des champs d'objet avec assignations
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+// 38 fois la ligne "ok"
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    float deux = 2.0;
+    int mdeux = -2;
+    int trois = 3;
+    float mtrois = -3.0;
+    int cinq = 5;
+    float mcinq = -5.0;
+    float dix = 10.0;
+    int mdix = -10;
+}
+
+{
+    A a = new A();
+    boolean b;
+
+    b = a.dix > a.trois;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.deux > a.cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.cinq > a.cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.dix >= a.trois;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.deux >= a.cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.cinq >= a.cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mdix > a.mtrois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mdeux > a.mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mcinq > a.mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mdix >= a.mtrois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mdeux >= a.mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mcinq >= a.mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.dix < a.trois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.deux < a.cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.cinq < a.cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.dix <= a.trois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.deux <= a.cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.cinq <= a.cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mdix < a.mtrois;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mdeux < a.mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mcinq < a.mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mdix <= a.mtrois;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mdeux <= a.mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mcinq <= a.mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.dix == a.trois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.deux == a.cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.cinq == a.cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mdix == a.mtrois;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mdeux == a.mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mcinq == a.mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mdeux < a.dix && a.cinq == a.cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mdeux >= a.dix && a.cinq <= a.cinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mcinq == a.dix && a.trois > a.mcinq;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.deux < a.mcinq && a.mdeux <= a.mdix;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = a.mdeux < a.dix || a.cinq == a.cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mdeux >= a.dix || a.cinq <= a.cinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.mcinq == a.dix || a.trois > a.mcinq;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = a.deux < a.mcinq || a.mdeux <= a.mdix;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+}

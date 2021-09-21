@@ -1,0 +1,25 @@
+// Description:
+//    Programme testant un 'if else' invalide.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 20 : mismatched input 'else' expecting...
+//
+// Historique:
+//    cree le 12/01/2021
+
+{
+	int i;
+	if(false){
+		i = 1;
+	} else {
+		i = 2;
+	} else if (true) {
+		i = 3;	
+	}
+	
+	println("Hello");
+}

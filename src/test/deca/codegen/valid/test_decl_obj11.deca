@@ -1,0 +1,24 @@
+// Description:
+//      Test de déclaration d'objet dans un calcul d'expression    
+//
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    4.90000e+01
+//    4.90000e+01
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    float x = 10;
+}
+
+{
+    float i = 1+(1+(1+(1+(1+(1+(new A()).x+(1+(1+(1+((new A()).x+(1+(1+(1+(1+(1+(1+(1+(1+(1+(1+(new A()).x)))))))))))))))))));
+    println(i);
+    println(1+(1+(1+(1+(1+(1+(new A()).x+(1+(1+(1+((new A()).x+(1+(1+(1+(1+(1+(1+(1+(1+(1+(1+(new A()).x))))))))))))))))))));
+}

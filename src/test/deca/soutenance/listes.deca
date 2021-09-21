@@ -1,0 +1,166 @@
+// Description:
+//    Support de demonstration pour la soutenance : liste d'entiers
+//
+// Historique :
+//  28/01/2021
+
+class Cell {
+	int val;
+	
+	void setNextCell(Cell c) 
+		{ next = c; }
+	void setVal(int val) 
+		{ this.val = val; }
+
+    boolean variable_inutile;
+	
+	Cell getNextCell()
+		{ return next; }
+	int getVal()
+		{ return this.val; }
+
+    Cell next;
+}
+
+class IntList {
+	int size = 0;
+	Cell first;
+	
+	void putAt(int index, int val) {
+		int i = 1;	// on veut s'arreter juste avant la cellule situee en 'index'
+		Cell temp, c = new Cell();
+		c.setVal(val);
+		
+		if(index == -1) {
+			index = size;
+		}
+
+		if(index == 0) {
+			c.setNextCell(first);
+			first = c;
+		} else if(index > 0 && index <= size) {
+			temp = first;
+				
+			while(i < index) {
+				temp = temp.getNextCell();
+				i = i + 1;
+			}
+			
+			if(index != size) {
+				c.setNextCell( temp.getNextCell() );
+			}
+			temp.setNextCell(c);
+			
+		} else {
+			size = size - 1;
+			println("Index out of bound");
+			println("Use -1 to put at the end, 0 at the beginning");
+		}
+		size = size + 1;
+	}
+	
+	void put(int val) {
+		this.putAt(-1,val);
+	}
+	
+	int get(int index) {
+		int i = 0;	// on veut s'arreter au niveau de la cellule en 'index'
+		Cell temp;
+		
+		if(index == -1) {
+			index = size-1;
+		}
+		
+		if(index >= 0 && index < size) {
+			temp = first;
+				
+			while(i < index) {
+				temp = temp.getNextCell();
+				i = i + 1;
+			}
+			return temp.getVal();
+		} else {
+			println("Index out of bound");
+		}
+	}
+	
+	void removeAt(int index) {
+		int i = 1,ret;	// on veut s'arreter juste avant la cellule situee en 'index'
+		Cell temp;
+		
+		if(index == -1) {
+			index = size - 1;
+		}
+		
+		if(index == 0) {
+			ret = first.getVal();
+			first = first.next;
+		} else if(index > 0 && index < size) {
+			temp = first;
+				
+			while(i < index) {
+				temp = temp.getNextCell();
+				i = i + 1;
+			}
+			
+			ret = temp.getNextCell().getVal();
+			temp.setNextCell(temp.getNextCell().getNextCell());
+		} else {
+			size = size + 1;
+			println("Index out of bound");
+		}
+		size = size - 1;
+	}
+	
+	void remove() {
+		this.removeAt(-1);
+	}
+	
+	int getSize()
+		{ return size; }
+	
+	void printList() {
+		int i=0;
+		
+		while(i<size) {
+			print(this.get(i)," ");
+			i = i + 1;
+		}
+		println();
+	}
+}
+
+{
+    IntList l;
+    int i=0,nb=15;
+
+    l = new IntList();
+
+    while(i<nb) {
+        l.put(i);
+        i = i + 1;
+    }
+    print("Affichage 1 : ");
+    l.printList();
+
+    l.remove();
+    print("Affichage 2 : ");
+    l.printList();
+
+    l.putAt(5,10000);
+    l.putAt(-1,666);
+    print("Affichage 3 : ");
+    l.printList();
+
+    l.removeAt(5);
+    print("Affichage 4 : ");
+    l.printList();
+
+    i=0;
+    while(i<nb-3) {
+        l.remove();
+        i = i + 1;
+    }
+
+    println("Taille de la liste : ",l.getSize());
+}

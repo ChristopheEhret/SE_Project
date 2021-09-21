@@ -1,0 +1,38 @@
+// Description:
+//    Programme testant que chaque classe a son propre environnement et qui est different de ses classes soeurs
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 37 (La méthode getS n'est pas défini dans la classe C)
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	int getX(){
+		return x;
+	}
+}
+class B extends A{
+	string s ;
+	string getS(){
+		return this.s;
+	}
+}
+class C extends A {
+	float f;
+	float getF(){
+		return this.f;
+	}
+}
+
+{
+	A a = new A();	
+	B b ;
+	C c ;
+	string s = c.getS();
+}

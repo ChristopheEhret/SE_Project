@@ -1,0 +1,12 @@
+// Description:
+//    Lit un flottant sur l'entrée standard dans une expression.
+//
+// Resultats:
+//    Le nombre en question * 2 + 1
+//
+
+{
+	float x = 2.0*readFloat()+1.0;
+   	println(x);
+}
+

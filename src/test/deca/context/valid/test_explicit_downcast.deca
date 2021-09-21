@@ -1,0 +1,32 @@
+// Description:
+//    Programme testant un downcast explicite
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    aucun résultat
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	int x = 5 ;
+	int getX(){
+		return x;
+	}
+}
+
+class B extends A {
+	float f = 2.3;
+	float getF(){
+		return f;
+	}	
+}
+
+{
+	
+	A a = new B();
+	B b = (B) (a);	
+}

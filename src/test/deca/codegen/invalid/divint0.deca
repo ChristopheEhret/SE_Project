@@ -1,0 +1,12 @@
+// Description:
+//    Division d'un int par 0
+//
+// Resultats:
+//    Erreur : Division par 0.
+//
+
+{
+   int i = 5;
+   i = i/0;
+}
+

@@ -1,0 +1,23 @@
+// Description:
+//    Programme testant un 'if else' invalide.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 18 : no viable alternative at input '{'
+//
+// Historique:
+//    cree le 12/01/2021
+
+{
+	int i;
+	if(false){
+		i = 2;
+	} elseif (true){	// separer else et if
+		i=1;
+	}
+	
+	println("Hello");
+}

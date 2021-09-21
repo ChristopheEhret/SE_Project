@@ -1,0 +1,23 @@
+// Description:
+//    Programme testant la syntaxe avec les lexeme suivants :
+//		PRINT, PRINTLN, PRINTLNX, PRINTX
+//		COMMA, OPARENT, CPARENT, OBRACE, CBRACE, SEMI
+//		STRING_CAR, STRING, , 
+//		COMMENT, MONOCOMMENT
+//
+// Resultats:
+//    	pas de resultat
+//
+// Historique:
+//    cree le 07/01/2021
+
+{
+print("print() \\ ","123456879\"");;
+printx("");
+/*  *test commentaire   ***** 
+*\*k/*
+*/
+
+printlnx(",(){}' ; ");
+// Un commentaire sur une seule ligne 
+println("test println ");}

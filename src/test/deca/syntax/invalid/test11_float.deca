@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant un flottant invalide.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+//    test_lex : pas d'erreur
+//    test_synt : erreur ligne 16 : un flottant doit avoir 
+//		une partie entiere : mismatched input '.' expecting...
+//
+// Historique:
+//    cree le 10/01/2021
+
+{
+	print(.4);
+}

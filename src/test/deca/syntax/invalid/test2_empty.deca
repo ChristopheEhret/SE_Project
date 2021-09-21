@@ -1,0 +1,14 @@
+// Description:
+//    Programme ayant un main vide (partie 2)
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+//	  test_lex : rien
+//    test_synt : erreur ligne 13 : no viable alternative at input '}'
+//
+// Historique:
+//    cree le 10/01/2021
+
+}

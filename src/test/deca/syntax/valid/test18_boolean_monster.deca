@@ -1,0 +1,16 @@
+// Description:
+//    Programme testant des expressions de booleens.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  aucun
+//
+// Historique:
+//    cree le 10/01/2020
+
+{
+	boolean b = 1 < 1 > 1 >= 1 <= 1;
+}

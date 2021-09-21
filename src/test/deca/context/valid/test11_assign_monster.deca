@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant des declarations de variables.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  aucun
+//
+// Historique:
+//    cree le 10/01/2020
+
+{
+	float x = (2 + 3) / 3.3 * 7 + -3 % 3;
+	boolean b = true || false && !false == true != false;
+}

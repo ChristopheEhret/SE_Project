@@ -1,0 +1,30 @@
+// Description:
+//    Programme testant la déclaration et l'instanciation de plein de vairiables pour être sur qu'il n'y ait pas de conflit
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//  Erreur IMA avec registres indéfinis 
+//
+// Historique:
+//    cree le 20/01/2021
+
+
+class A {
+    int x = 7;
+}
+
+{
+    int i = 10;
+    float a = 4.0;
+    int j, k = 2, l;
+    float m, n, o = 3.0;
+    boolean p = true;
+    A f = new A();
+    boolean b, c, d, e = false;
+    A g, h, q, r;
+
+    println(j);
+}

@@ -1,0 +1,30 @@
+// Description:
+//    Test de programme legerement complexe
+//	  Calcule le plus petit entier divisible par
+//		tous les entiers de 1 a 20 :
+//    https://projecteuler.net/problem=5
+//
+// Resultats:
+//    232792560
+// 
+// Historique:
+//    cree le 16/01/2021
+
+{
+	int i=2,n=3;
+	int a,b,r;
+	
+	while(i<=20) {
+		b = i;
+		a = n;
+    	
+   		while(b>0) {
+   			r = a%b;
+   			a = b;
+   			b = r;
+   		}
+   		n = i*(n/a);
+		i = i + 1;
+	}
+	println(n);
+}

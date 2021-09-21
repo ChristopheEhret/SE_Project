@@ -1,0 +1,26 @@
+// Description:
+//    Programme vérifiant que l'on ne peut pas définir une méthode qui existe déjà dans la même classe
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 20 : La methode getX est déja definie
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	float y;
+	int getX(){
+		return x;
+	}
+	float getX(){
+		return y;
+	}
+}
+
+{
+}

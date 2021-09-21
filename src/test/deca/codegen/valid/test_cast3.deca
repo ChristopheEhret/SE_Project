@@ -1,0 +1,30 @@
+// Description:
+//    Programme testant un cast boolean ---> boolean
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    ok
+//    ok
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    boolean i = true;
+    boolean j = (boolean)(i);
+
+    if(j) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if((boolean)(i)) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+}

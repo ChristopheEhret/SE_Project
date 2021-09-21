@@ -1,0 +1,28 @@
+// Description:
+//    Programme verifiant qu'il est impossible d'utiliser 'this' dans le main 
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 27	Impossible d'utiliser 'this' dans main
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A  {
+	int x = 5 ;
+	int getY(int x){
+		return this.x;
+	}
+	int getX(int y){
+		int a = getY(y);
+		return a;
+	}
+}
+
+{
+	A a,b= new A();
+	this.a = b;
+}

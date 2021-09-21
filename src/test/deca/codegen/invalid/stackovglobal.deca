@@ -1,0 +1,15 @@
+// Description:
+//    Allocation de 4 variables dans le stack.
+//	  À exécuter avec la commande `ima -p 2 <nom.ass>`
+//
+// Resultats:
+//    Erreur : La pile est pleine.
+//
+
+{
+   int a;
+   float b;
+   boolean c;
+   int d;
+}
+

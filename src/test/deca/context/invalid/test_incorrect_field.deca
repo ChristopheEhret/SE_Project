@@ -1,0 +1,16 @@
+// Description:
+//    Programme verifiant qu'il est impossible de déclarer un champ de type void
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 15
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A  {
+	void x ;
+}

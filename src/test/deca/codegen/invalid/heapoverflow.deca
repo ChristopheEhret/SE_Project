@@ -1,0 +1,14 @@
+// Description:
+//    Boucle qui alloue des objets pour remplir le tas.
+//
+// Resultats:
+//    Erreur : La tas est plein.
+//
+
+class A {}
+
+{
+    while(true) {
+        new A();
+    }
+}

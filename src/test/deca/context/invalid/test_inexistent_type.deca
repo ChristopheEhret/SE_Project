@@ -1,0 +1,18 @@
+// Description:
+//    Programme testant une superclasse qui n'existe pas
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+// Resultats:
+//    test_context : erreur ligne 9 : The class A doesn't have a superclass or no exist
+class A  {
+	inexistentType x ;
+
+}
+
+{
+	A a = new A();
+	println("hello");
+	
+}

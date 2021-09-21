@@ -1,0 +1,64 @@
+// Description:
+//      Test de déclaration d'objet dans un calcul d'expression    
+//
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//   0
+//   10
+//   0
+//   10
+//   0.00000e+00
+//   0.00000e+00
+//   10
+//   ok
+//   ok
+//   ok
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    int a, b = 10, c;
+    B d = new B();
+    float e, f;
+    B g, h = new B(), i;
+    boolean j = false, k, l = true;
+}
+
+class B {
+    int x = 10;
+}
+
+{
+    A a = new A();
+
+    println(a.a);
+    println(a.b);
+    println(a.c);
+    println(a.d.x);
+    println(a.e);
+    println(a.f);
+    println(a.h.x);
+    
+    if(a.j) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(a.k) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+    
+    if(a.l) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+}

@@ -1,0 +1,27 @@
+// Description:
+//    Programme testant un appel de methode incorrect
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 26 ( nombre de paramètres données incorrect)
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		return x;
+	}
+}
+{
+	A a = new A();	
+	int b;
+	a.getY(b);
+}

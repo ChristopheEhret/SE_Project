@@ -1,0 +1,34 @@
+// Description:
+//    Programme testant les instructions sur les booleens.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	// declarations simples
+	boolean	t=true ,f = false;
+	
+	!t;
+	!f;
+	t || f;
+	f || f;
+	t && t;
+	f && t;
+	1==2;
+	1!=2;
+	1<2;
+	1>2;
+	1<=2;
+	1>=2;
+	t==f;
+	f!=f;
+	
+	f || ( t && !f);
+}

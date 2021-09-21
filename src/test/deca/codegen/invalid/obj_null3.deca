@@ -1,0 +1,24 @@
+// Description:
+//    Vérifie si une erreur est bien levée lors du déréférencement d'un objet null
+//
+// Resultats:
+//    Erreur : Dereferencement d'un objet null
+//
+
+class A {
+    A a;
+
+    void test() {
+        a.test2();
+    }
+
+    void test2() {
+        println("ko");
+    }
+}
+
+{
+    A a = new A();
+
+    a.test();
+}

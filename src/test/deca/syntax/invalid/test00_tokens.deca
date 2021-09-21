@@ -1,0 +1,17 @@
+// Description:
+//	  Programme testants tous les tokens
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+//	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 15 : mismatched input 'else' expecting...
+//
+// Historique:
+//    cree le 10/01/2021
+
+{
+	else false if print println printlnx printx return true while
+	int float string boolean
+}

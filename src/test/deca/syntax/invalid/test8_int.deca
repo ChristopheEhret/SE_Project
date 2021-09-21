@@ -1,0 +1,18 @@
+// Description:
+//    Programme testant un entier invalide.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+//	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 17 : un int ne peut pas commencer par un 0 
+//		ou un float doit etre de la forme NUM.NUM :
+//      no viable alternative at input '12'
+//
+// Historique:
+//    cree le 10/01/2021
+
+{
+	print(012);
+}

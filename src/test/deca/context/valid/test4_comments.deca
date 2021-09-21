@@ -1,0 +1,69 @@
+// Description:
+//    Programme vide testant tous les types de commentaires.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    "comment i" pour i allant de 1 à 15.
+//	  verifier a l'aide d'un script que tous les 
+//	  "comment i" sont bien ecrits sur la sortie standard
+//
+// Historique:
+//    cree le 09/01/2021
+
+{
+	// commentaire 1
+	println("comment 1");
+	
+	//commentaire 2
+	println("comment 2");
+	
+	// commentaire 3 *
+	println("comment 3");
+	
+	// commentaire 4 */
+	println("comment 4");
+	
+	// commentaire 5 /*
+	println("comment 5");
+	
+	/* commentaire 6 */
+	println("comment 6");
+	
+	/*commentaire 7 */
+	println("comment 7");
+	
+	/* commentaire 8*/
+	println("comment 8");
+	
+	/*commentaire 9*/
+	println("comment 9");
+	
+	/*** commentaire 10 ***/
+	println("comment 10");
+	
+	/*/* commentaire 11 */
+	println("comment 11");
+	
+	/*
+	comment 12 */
+	println("comment 12");
+	
+	/* comment 13
+	*/
+	println("comment 13");
+	
+	/*
+	comment 14
+	*/
+	println("comment 14");
+	
+	/*
+	
+	comment 15
+	
+	*/
+	println("comment 15");
+}

@@ -1,0 +1,33 @@
+// Description:
+//    Programme testant l'appel de méthode
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    ok
+//    ok
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    void test() {
+        println("ko");
+    }
+}
+
+class B extends A {
+    void test() {
+        println("ok");
+    }
+}
+
+{
+    B b = new B();
+    A a = new B();
+
+    a.test();
+    b.test();
+}

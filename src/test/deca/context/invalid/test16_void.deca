@@ -1,0 +1,17 @@
+// Description:
+//    Programme testant un le type void.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 16 : Cannot 
+//    declare a variable of type void
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	void i;
+}

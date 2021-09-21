@@ -1,0 +1,19 @@
+// Description:
+//    Programme testant une instanciation incorrecte
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+// Resultats:
+//    test_context : erreur ligne 16 : Cannot instantiate anything other than a class
+class A  {
+	int getX(int a){
+		return a;
+	}
+}
+
+{
+	int a = new int();
+	println("hello");
+	
+}

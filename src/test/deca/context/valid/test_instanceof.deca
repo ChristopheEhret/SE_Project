@@ -1,0 +1,25 @@
+// Description:
+//    Programme testant simplement instanceof
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    true
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A  {
+	protected int x ;
+	int getX(){
+		return x;
+	}
+}
+{
+	A a = new A();	
+	if(a instanceof A){
+		println("true");
+	}
+}

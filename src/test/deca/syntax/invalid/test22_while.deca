@@ -1,0 +1,20 @@
+// Description:
+//    Programme testant une boucle while invalide.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 17 : missing '{' at 'i'
+//
+// Historique:
+//    cree le 11/01/2021
+
+{
+	int i=0;
+	while(i<1)
+		i = 2;
+	
+	println("Hello");
+}

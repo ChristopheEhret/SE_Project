@@ -1,0 +1,17 @@
+// Description:
+//    Allocation récurive qui devrait fait un stackoverflow..
+//
+// Resultats:
+//    Erreur : La pile est pleine.
+//
+
+class A {
+   void test() {
+      test();
+   }
+}
+
+{
+   A a = new A();
+   a.test();
+}

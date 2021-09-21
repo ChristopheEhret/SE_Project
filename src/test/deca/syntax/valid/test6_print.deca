@@ -1,0 +1,22 @@
+// Description:
+//    Programme utilisant les differents print.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    Hello
+//	  Hello
+//    Hello 1
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	print("Hel");
+	println("lo");
+	printx("Hel");
+	printlnx("lo");
+	print("H","e","l","l","o ",1);
+}

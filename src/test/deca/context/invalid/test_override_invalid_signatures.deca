@@ -1,0 +1,25 @@
+// Description:
+//    Programme testant la redéfinition d'une méthode avec une signature différente
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+// Resultats:
+//    test_context : erreur ligne 16 : The Override is impossible because signatures are not equals
+class A  {
+	int getX(){
+		return 2;
+	}
+}
+
+class B extends A {
+	int getX(int a){
+		return a;
+	}
+}
+
+{
+	A a = new A();
+	println("hello");
+	
+}

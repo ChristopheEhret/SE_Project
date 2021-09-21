@@ -1,0 +1,24 @@
+// Description:
+//    Programme verifiant qu'une methode ne peut être appelé que par une classe
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 23 : L'object sur lequel on fait un appel de methode n'est pas une classe
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A  {
+	protected int x ;
+	int getX(){
+		return this.x;
+	}
+}
+
+{
+	int a = 2;
+	print(a.getX());
+}

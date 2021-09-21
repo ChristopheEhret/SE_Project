@@ -1,0 +1,57 @@
+// Description:
+//    Programme testant simplement instanceof
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    true
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {}
+class B extends A {}
+class C extends B {}
+class D {}
+
+{
+    B b = new B();
+    boolean b2;
+
+    b2 = b instanceof A;
+    if(b2) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b2 = b instanceof B;
+    if(b2) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b2 = b instanceof D;
+    if(b2) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b2 = !(b instanceof A);
+    if(b2) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b2 = !(b instanceof C);
+    if(b2) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+}

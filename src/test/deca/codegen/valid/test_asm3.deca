@@ -1,0 +1,29 @@
+// Description:
+//    Programme testant la methode asm
+//	  Etape(s) : A, B, C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	10
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A {
+	int x = 0;
+	void Asm(int a) asm("
+		LOAD -2(LB), R1
+		LOAD -3(LB), R0
+		ADD #3, R0
+		STORE R0, 1(R1)
+		RTS
+		");
+}
+{
+	A a = new A();
+	a.Asm(7);
+
+	println(a.x);
+}

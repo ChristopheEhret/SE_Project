@@ -1,0 +1,24 @@
+// Description:
+//    Programme verifiant que les opérations d'inégalités (ici "plus grand ou egal que" )  de deux classes quelconque est impossible 
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 23 : Les types sont incompatibles pour une opération d'inégalité 
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A  {
+	int x = 5 ;
+	int getX(){
+		return x;
+	}
+}
+
+{
+	A a;	
+	boolean bol = a>=a;
+}

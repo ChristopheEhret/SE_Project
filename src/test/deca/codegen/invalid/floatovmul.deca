@@ -1,0 +1,14 @@
+// Description:
+//    Dépassement de le capacité des flottants par multiplication
+//
+// Resultats:
+//    Erreur : Une opération a dépassé la capacité maximale des flottants.
+//
+
+{
+	float i = 10.0;
+	while(true) {
+		i = i*i;
+	}
+}
+

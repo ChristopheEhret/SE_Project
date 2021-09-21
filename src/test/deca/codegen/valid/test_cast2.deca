@@ -1,0 +1,21 @@
+// Description:
+//    Programme testant un cast float ---> float
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    1.00000+e01
+//    1.00000+e01
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    float i = 10.0;
+    float j = (float)(i);
+
+    println(j);
+    println((float)(i));
+}

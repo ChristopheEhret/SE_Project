@@ -1,0 +1,36 @@
+// Description:
+//    teste les listes chainees d'entiers
+//
+// Resultats:
+// 10 11 12 13 14 15 
+// 10 11 12 13 14 
+// 10 11 13 14 
+// 10 11 100 13 14
+// 
+// Historique:
+//    cree le 19/01/2021
+
+#include "liste_chainee_entiers.decah"
+
+{
+	IntList liste = new IntList();
+	
+	//liste.man();
+	
+	liste.put(10);
+	liste.put(11);
+	liste.put(12);
+	liste.put(13);
+	liste.put(14);
+	liste.put(15);
+	liste.printList();
+	
+	liste.remove();
+	liste.printList();
+	
+	liste.removeAt(2);
+	liste.printList();
+	
+	liste.putAt(2,100);
+	liste.printList();
+}

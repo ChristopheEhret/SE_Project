@@ -1,0 +1,27 @@
+// Description:
+//    Programme testant les déclarations de classes avec un main.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+// 	  auncun
+//
+// Historique:
+//    cree le 15/01/2020
+
+class A {
+}
+
+class B {
+}
+
+class C extends A {
+}
+
+{
+	A a = new A();
+	C c = new C();
+	println("");
+}

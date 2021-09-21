@@ -1,0 +1,13 @@
+// Description:
+//    Programme testant une selection incorrecte
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+// Resultats:
+//    test_context : erreur ligne 12 :  The left expression of the selection is not of type class
+
+{
+	int i = 2;
+	i.x = 2;	
+}

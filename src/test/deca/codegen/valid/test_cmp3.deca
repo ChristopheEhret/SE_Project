@@ -1,0 +1,248 @@
+// Description:
+//    Programme testant les comparaisons entre entiers dans des variables
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+// 38 fois la ligne "ok"
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    int deux = 2, mdeux = -2;
+    int trois = 3, mtrois = -3;
+    int cinq = 5, mcinq = -5;
+    int dix = 10, mdix = -10;
+    boolean b;
+
+    if(dix > trois) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(deux > cinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(cinq > cinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(dix >= trois) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(deux >= cinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(cinq >= cinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mdix > mtrois) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mdeux > mcinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mcinq > mcinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mdix >= mtrois) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mdeux >= mcinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mcinq >= mcinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(dix < trois) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(deux < cinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(cinq < cinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(dix <= trois) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(deux <= cinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(cinq <= cinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mdix < mtrois) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mdeux < mcinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mcinq < mcinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mdix <= mtrois) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mdeux <= mcinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mcinq <= mcinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(dix == trois) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(deux == cinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(cinq == cinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mdix == mtrois) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mdeux == mcinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mcinq == mcinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mdeux < dix && cinq == cinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mdeux >= dix && cinq <= cinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mcinq == dix && trois > mcinq) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(deux < mcinq && mdeux <= mdix) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    if(mdeux < dix || cinq == cinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mdeux >= dix || cinq <= cinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(mcinq == dix || trois > mcinq) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    if(deux < mcinq || mdeux <= mdix) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+}

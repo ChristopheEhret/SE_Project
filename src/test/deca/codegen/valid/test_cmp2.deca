@@ -1,0 +1,282 @@
+// Description:
+//    Programme testant les comparaisons entre entiers avec assignations
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+// 38 fois la ligne "ok"
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    boolean b;
+
+    b = 10 > 3;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = 2 > 5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = 5 > 5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = 10 >= 3;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = 2 >= 5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = 5 >= 5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -10 > -3;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -2 > -5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -5 > -5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -10 >= -3;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -2 >= -5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -5 >= -5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = 10 < 3;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = 2 < 5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = 5 < 5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = 10 <= 3;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = 2 <= 5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = 5 <= 5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -10 < -3;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -2 < -5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -5 < -5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -10 <= -3;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -2 <= -5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -5 <= -5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = 10 == 3;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = 2 == 5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = 5 == 5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -10 == -3;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -2 == -5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -5 == -5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -2 < 10 && 5 == 5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -2 >= 10 && 5 <= 5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -5 == 10 && 3 > -5;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = 2 < -5 && -2 <= -10;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+
+    b = -2 < 10 || 5 == 5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -2 >= 10 || 5 <= 5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = -5 == 10 || 3 > -5;
+    if(b) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    b = 2 < -5 || -2 <= -10;
+    if(b) {
+        println("ko");
+    } else {
+        println("ok");
+    }
+}

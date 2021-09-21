@@ -1,0 +1,21 @@
+// Description:
+//    Programme testant un cast int ---> float
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    1.30000e+01
+//    1.30000e+01
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    int i = 10;
+    float j = 1+(1+(1+(float)(i)));
+
+    println(j);
+    println(1+(1+(1+(float)(i))));
+}

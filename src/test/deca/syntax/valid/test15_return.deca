@@ -1,0 +1,18 @@
+// Description:
+//    Programme testant le return.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	  pas de resultat
+//
+// Historique:
+//    cree le 10/01/2020
+
+{
+	return 12;
+	return "retour";
+	return 12.0F;
+}

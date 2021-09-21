@@ -1,0 +1,16 @@
+// Description:
+//    Programme testant une mauvaise operation.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//	  test_context : erreur ligne 15 : The types are incompatible for a Arithmetic Operation
+//
+// Historique:
+//    cree le 09/01/2020
+
+{
+	1.0 + false;
+}

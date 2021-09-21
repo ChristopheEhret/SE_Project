@@ -1,0 +1,31 @@
+// Description:
+//    Programme testant l'appel de méthode
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    260
+//    260
+//
+// Historique:
+//    cree le 20/01/2021
+
+class B {
+    int x = 10;
+}
+
+class A {
+    int test(B a, B b, B c, B d, B e, B f, B g, B h, B i, B j, B k, B l, B m, B n, B o, B p, B q, B r, B s, B t, B u, B v, B w, B x, B y, B z) {
+        return a.x + (b.x + (c.x + (d.x + (e.x + (f.x + (g.x + (h.x + (i.x + (j.x + (k.x + (l.x + (m.x + (n.x + (o.x + (p.x + (q.x + (r.x + (s.x + (t.x + (u.x + (v.x + (w.x + (x.x + (y.x + (z.x)))))))))))))))))))))))));
+    }
+}
+
+{
+    A a = new A();
+
+    int i = a.test(new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B());
+    println(i);
+    println(a.test(new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B(), new B()));
+}

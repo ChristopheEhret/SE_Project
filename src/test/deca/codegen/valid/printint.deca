@@ -1,0 +1,17 @@
+// Description:
+//    Affichage d'un entier.
+//
+// Resultats:
+//    128
+//
+// Historique:
+//    cree le 11/01/2021
+
+// Un exemple de programme Deca
+
+
+{
+	print(12);
+	println(8);
+}
+

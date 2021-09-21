@@ -1,0 +1,40 @@
+// Description:
+//    Support de demonstration pour la soutenance
+//
+// Historique :
+//  28/01/2021
+
+{
+    int n;
+    float f;
+    boolean b1 = true;
+
+    println("Veuillez entrer un entier s'il vous plaït");
+    n = readInt();
+    println("Vous avez entré : ",n);
+    println("n+5 : ", n+5,", n-7 : ", n-7,", 2n : ", 2*n,", n/2 : ",n/2);
+
+    
+    println("Veuillez entrer un flottant");
+    f = readFloat();
+    println("Vous avez entré : ",f);
+    println("f+5.0 : ", f+5.0,", f-7 : ", f-7,", 2f : ", 2*f,", f/2.0 : ",f/2.0);
+        
+    while(b1) {
+        println("Entrez un entier pair entre 30 et 2000");
+        n = readInt();
+        if( n < 30 ) {
+            println("Entier trop petit");
+
+        } else if ( n <= 2000 && n%2 == 0 ) {
+            println("C'est juste !");
+            b1 = false;
+
+        } else if ( n > 2000 ) {
+            println("Entier trop grand");
+
+        } else if ( false || n%2 != 0 ) {
+            println("Entier impair");
+        }
+    }
+}

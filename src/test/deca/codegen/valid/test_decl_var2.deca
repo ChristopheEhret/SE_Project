@@ -1,0 +1,20 @@
+// Description:
+//    Programme testant simplement la déclaration et l'instanciation de variables
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    1.00000e+01
+//    -1.00000e+01
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    float i = 10;
+
+    println(i);
+    println(-i);
+}

@@ -1,0 +1,28 @@
+// Description:
+//    Programme testant une selection this implicite ( dans la methode getY)
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    5.
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x = 5 ;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		return getX();
+	}
+}
+
+{
+	A a = new A();	
+	float b = a.getY();
+	print(b);
+}

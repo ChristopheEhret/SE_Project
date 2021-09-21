@@ -1,0 +1,1 @@
+./src/test/deca/syntax/invalid/test00_tokens.deca:15:1: mismatched input 'else' expecting {INT, '-', 'false', 'if', 'new', 'null', 'readInt', 'readFloat', 'print', 'println', 'printlnx', 'printx', 'return', 'this', 'true', 'while', IDENT, '(', '}', '!', ';', FLOAT, STRING}

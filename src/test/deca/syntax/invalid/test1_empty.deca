@@ -1,0 +1,14 @@
+// Description:
+//    Programme ayant un main vide
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+//	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 15 (EOF) : missing '}' at '<EOF>'
+//
+// Historique:
+//    cree le 10/01/2021
+
+{

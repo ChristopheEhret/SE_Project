@@ -1,0 +1,30 @@
+// Description:
+//    Programme testant l'appel de méthode dans un calcul d'expression
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    44
+//    44
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    int test() {
+        int i = 2;
+        int j = 5;
+        int k = i * j;
+        return k;
+    }
+}
+
+{
+    A a = new A();
+
+    int i = 1+(a.test()+(1+(1+(1+(a.test()+(1+(1+(1+(1+(1+(1+(1+(1+(1+(1+(a.test()))))))))))))))));
+    println(i);
+    println(1+(a.test()+(1+(1+(1+(a.test()+(1+(1+(1+(1+(1+(1+(1+(1+(1+(1+(a.test())))))))))))))))));
+}

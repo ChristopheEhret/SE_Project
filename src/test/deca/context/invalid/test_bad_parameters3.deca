@@ -1,0 +1,24 @@
+// Description:
+//    Programme testant un appel de methode incorrect
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 23 ( le paramètre donné n'est pas du bon type)
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	void setX(int c){
+		this.x = c;
+	}
+}
+{
+	A a = new A();	
+	float b;
+	a.setX(b);
+}

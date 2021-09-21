@@ -1,0 +1,20 @@
+// Description:
+//    Programme testant une selection incorrecte
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+// Resultats:
+//    test_context : erreur ligne 19 :  The right identifier of the selection is not a field
+
+class A {
+	int getX(){
+		return 2;
+	}
+}
+
+
+{
+	A a = new A();
+	a.getX ;	
+}

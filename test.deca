@@ -1,0 +1,14 @@
+class A {
+    int salut = 9;
+    void test() {
+        int salut = 0;
+
+        if(true) {
+            println(salut, "salut");
+        }
+    }
+}
+
+{
+    A a = new A();
+}

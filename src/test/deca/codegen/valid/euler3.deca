@@ -1,0 +1,33 @@
+// Description:
+//    Test de programme legerement complexe
+//	  Calcule le plus grand facteur premier de
+//		600851475. Le probleme original porte sur
+//		600851475143 mais est trop grand pour deca :
+//    https://projecteuler.net/problem=3
+//
+// Resultats:
+//    54499
+// 
+// Historique:
+//    cree le 16/01/2021
+
+{
+	int n = 600851475;
+	int div = 2;
+	boolean continue = true;
+	
+	while(continue){
+		while(n%div == 0){
+			n = n/div;
+		}
+		
+		if(n == 1) {
+			continue = false;
+		}
+		
+		// on divise par le nbr suivant (on cherche pas les nbr premiers)
+		div = div + 1;	// ! a la derniere iteration div est quand meme incremente !
+	}
+	div = div - 1;
+	println(div);
+}

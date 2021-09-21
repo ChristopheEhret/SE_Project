@@ -1,0 +1,19 @@
+// Description:
+//    Programme verifiant qu'il est impossible d'utiliser un champ qui n'existe pas
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 18 : Le champ x  n'est pas définie dans la classe A 
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A  {
+}
+{
+	A a = new A();
+	a.x = 2;
+}

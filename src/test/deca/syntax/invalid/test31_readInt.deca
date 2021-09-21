@@ -1,0 +1,18 @@
+// Description:
+//    Programme testant readInt.
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//	  Contextuellement : NON
+//
+// Resultats:
+// 	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 17 : missing ')' at ';'
+//
+// Historique:
+//    cree le 14/01/2020
+
+{
+	int x;
+	x=readInt(;
+}

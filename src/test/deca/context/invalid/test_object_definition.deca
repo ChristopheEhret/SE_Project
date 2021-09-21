@@ -1,0 +1,26 @@
+// Description:
+//    Programme prouvant l'existence de la classe Objet et la non possibilité de déclarer une classe nommé Object
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 14 : La classe Object est déja definie
+//
+// Historique:
+//    cree le 21/01/2021
+
+class Object  {
+	protected int x ;
+	float y;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		return y;
+	}
+}
+
+{
+}

@@ -1,0 +1,30 @@
+// Description:
+//    Test sur les opérations sur les booléens en tant qu'instructions
+//
+// Resultats:
+//    
+// 
+// Historique:
+//    cree le 15/01/2021
+
+{
+	// declarations simples
+	boolean	t=true ,f = false;
+	
+	!t;
+	!f;
+	t || f;
+	f || f;
+	t && t;
+	f && t;
+	1==2;
+	1!=2;
+	1<2;
+	1>2;
+	1<=2;
+	1>=2;
+	t==f;
+	f!=f;
+	
+	f || ( t && !f);
+}

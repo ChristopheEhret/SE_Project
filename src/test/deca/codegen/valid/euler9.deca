@@ -1,0 +1,38 @@
+// Description:
+//    Test de programme legerement complexe. (euler8 n'est 
+//	  pas realisable en deca complet)
+//	  Trouver le tripler pythagoricien (a,b,c) tel que 
+//	  a + b + c = 1000
+//    https://projecteuler.net/problem=9
+//
+// Resultats:
+//    180625
+// 
+// Historique:
+//    cree le 19/01/2021
+
+{
+	int a,b,c;
+	boolean continue;
+	
+	continue = true;
+	a = 1;
+	while(continue && a<500) {	// c>a donc a<500
+		b = 1;
+		while(a+b<1000 && continue) {
+			c = 1000 - a - b;
+			
+			if(a*a + b*b == c*c) {
+				continue = false;
+				println(a," ",b," ",c);
+			}
+			
+			b = b + 1;
+		}
+		a = a + 1;
+	}
+	println("abc = ",a*b*c);
+	println(200*200);
+	println(375*375);
+	println(425*425);
+}

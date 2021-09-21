@@ -1,0 +1,198 @@
+// Description:
+//    Test sur les opérations sur les booléens dans des variables
+//
+// Resultats:
+// 29 fois la ligne "ok"
+// 
+// Historique:
+//    cree le 15/01/2021
+
+{
+	boolean	t=true ,f= false;
+	boolean	t2=true ,f2= false;
+	boolean	t3=true ,f3= false;
+	boolean	t4=true ,f4= false;
+	boolean	t5=true ,f5= false;
+
+	if(t) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+	if(f) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+	if(!t) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+	if(t && t2) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+	if(t && false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+	if(false && t) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+	if(false && false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+	if(t || t2) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+	if(t || false) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+	if(false || t) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+	if(false || false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+	if(t == t2) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+	if(t == false) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+	if(false == t) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+	if(false == false) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+	if(t || false == t2) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+	if(t && false == false) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+	
+	if(t == t2 || false) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+	if(false == t && true) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+	
+	if(t && (t2 && (t3 && (true && (true && (t && (t3 && (true && (t && (t4 && (t5 && (t4 && (true && (true && (true && (t5)))))))))))))))) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+	
+	if(t && (t2 && (t3 && (t && (true && (t && (t4 && (f && (t2 && (t3 && (true && (true && (t5 && (true && (true && (t)))))))))))))))) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(true && (true && (t3 && (true && (true && (t && (true && (true && (true && (t5 && (true && (true && (true && (true && (true && (f)))))))))))))))) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(false && (t && (true && (t && (true && (true && (true && (true && (t5 && (true && (t && (true && (true && (true && (true && (f3)))))))))))))))) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+	
+
+	if(f || (f2 || (f5 || (f3 || (f3 || (f4 || (f2 || (false || (false || (false || (f2 || (f3 || (false || (false || (false || (false)))))))))))))))) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(f5 || (f2 || (false || (false || (f4 || (f || (false || (f2 || (false || (false || (false || (f5 || (false || (false || (f2 || (t3)))))))))))))))) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(f5 || (false || (f || (t2 || (false || (false || (f5 || (false || (t4 || (false || (f || (false || (false || (f3 || (false || (f3)))))))))))))))) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(true || (f4 || (false || (f2 || (false || (false || (false || (f2 || (false || (f || (f5 || (false || (false || (false || (f2 || (f3)))))))))))))))) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+
+
+	if(t3 == f == t2 == f3 == t == f2) {
+		println("ko");
+	} else {
+		println("ok");
+	}
+
+
+	if(t3 != f != t != f2 != t4 != f) {
+		println("ok");
+	} else {
+		println("ko");
+	}
+}

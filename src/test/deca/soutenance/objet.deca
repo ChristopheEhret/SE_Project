@@ -1,0 +1,353 @@
+// Description:
+//    Support de demonstration pour la soutenance : nombre d'or
+//
+// Historique :
+//  28/01/2021
+
+
+class Categorie {
+    int id = -1;
+    int profondeur = -1;
+    int nb_sous_categories=0;
+    protected Categorie surcategorie;
+
+    void init(int id) {
+        if(this instanceof Regne) {
+            profondeur = 0;
+        } else if(this instanceof Embranchement) {
+            profondeur = 1;
+        } else if(this instanceof Classe) {
+            profondeur = 2;
+        } else if(this instanceof Ordre) {
+            profondeur = 3;
+        } else if(this instanceof Famille) {
+            profondeur = 4;
+        } else if(this instanceof Genre) {
+            profondeur = 5;
+        } else if(this instanceof Espece) {
+            profondeur = 6;
+        }
+
+        if(profondeur != -1) {
+            this.id = id;
+        } else {
+            println("Erreur dans Categorie.init(int id)");
+        }
+    }
+
+    void affiche() 
+        { print("catégorie"); }
+
+    // getters
+    int getProfondeur() 
+        { return profondeur; }
+    int getId() 
+        { return id; }
+    int getNbSousCategories() 
+        { return nb_sous_categories; }
+    Categorie getSurcategorie() 
+        { return surcategorie; }
+
+    //setters
+    void setId(int id) 
+        { this.id = id; }
+    void setNbSousCategories(int n) 
+        { nb_sous_categories = n; }
+}
+
+class Regne extends Categorie {
+    void affiche() { print("règne"); }
+}
+
+class Embranchement extends Categorie {
+    void affiche() { print("embranchement"); }
+    void setRegne(Regne r) { this.surcategorie = r; }
+}
+
+class Classe extends Categorie { 
+    void affiche() { print("classe"); }
+    void setEmbranchement(Embranchement e) { surcategorie = e; }
+}
+
+class Famille extends Categorie {     // echange
+    void affiche() { print("famille"); }
+    void setOrdre(Ordre o) { surcategorie = o; }
+}
+
+class Ordre extends Categorie {     // echange
+    void affiche() { print("ordre"); }
+    void setClasse(Classe c) { surcategorie = c; }
+}
+
+class Genre extends Categorie {
+    void affiche() { print("genre"); }
+    void setFamille(Famille f) { surcategorie = f; }
+}
+
+class Espece extends Categorie {
+    void affiche() { print("espèce"); }
+    void setGenre(Genre g) { surcategorie = g; }
+}
+
+class Index {
+    void printNom(int id) {
+        if(id == 0) {
+            print("animaux");
+        } else if(id == 1) {
+            print("mollusques");
+        } else if(id == 2) {
+            print("arthropodes");
+        } else if(id == 3) {
+            print("vertébrés");
+        } else if(id == 4) {
+            print("chytridiomycètes");
+        } else if(id == 5) {
+            print("zygomycètes");
+        } else if(id == 6) {
+            print("ascomycètes");
+        } else if(id == 7) {
+            print("glomeromycètes");
+        } else if(id == 8) {
+            print("fungi");
+        } else if(id == 9) {
+            print("basidiomycètes");
+        } else if(id == 10) {
+            print("tremellomycètes");
+        } else if(id == 11) {
+            print("dacrymycètes");
+        } else if(id == 12) {
+            print("agaricomycètes");
+        } else if(id == 13) {
+            print("jaapiales");
+        } else if(id == 14) {
+            print("atheliales");
+        } else if(id == 15) {
+            print("amylocorticiales");
+        } else if(id == 16) {
+            print("agaricales");
+        } else if(id == 17) {
+            print("agaricacées");
+        } else if(id == 18) {
+            print("amanitacées");
+        } else if(id == 19) {
+            print("cortinariacées");
+        } else if(id == 20) {
+            print("inocybacées");
+        } else if(id == 21) {
+            print("psathyrellacées");
+        } else if(id == 22) {
+            print("coprinellus");
+        } else if(id == 23) {
+            print("coprinopsis");
+        } else if(id == 24) {
+            print("parasola");
+        } else if(id == 25) {
+            print("psytharelles");
+        } else if(id == 26) {
+            print("coprin noir d'encre");
+        } else if(id == 27) {
+            print("coprin cendré");
+        } else if(id == 28) {
+            print("coprin pie");
+        }
+    }
+}
+
+
+class Main extends Object {
+    Categorie c;
+    Index index = new Index();
+
+    void start() {
+        int id = 0;
+
+        Regne animal, vegetal = new Regne(), fungus, protiste, bacterie, archee;
+        Embranchement mollusques, arthropodes, vertebres;   // + autres
+        Embranchement chytridiomycetes, zygomycetes, ascomycetes, basidiomycetes, glomeromycetes;
+        Classe tremellomycetes, dacrymycetes, agaricomycetes;
+        Ordre jaapiales, atheliales, amylocorticiales, agaricales;
+        Famille agaricacees, amanitacees, cortinariacees, inocybacees, psathyrellacees; // + autres
+        Genre coprinellus, coprinopsis, parasola, psathyrelles; // + autres
+        Espece atramentaria, cinerea, picacea; // + autres
+
+        // regnes
+        animal = new Regne();
+        fungus = new Regne();
+
+        // embranchements
+        /* animaux */
+        mollusques = new Embranchement();
+        arthropodes = new Embranchement();
+        vertebres = new Embranchement();
+        /* champignons */
+        chytridiomycetes = new Embranchement();
+        zygomycetes = new Embranchement();
+        ascomycetes = new Embranchement();
+        basidiomycetes = new Embranchement();
+        glomeromycetes = new Embranchement();
+
+        // initialisations chaotiques des regnes et embranchements
+        animal.init(id); id=id+1;
+        animal.setNbSousCategories(6);
+        mollusques.init(id); id=id+1;
+        arthropodes.init(id); id=id+1;
+        vertebres.init(id); id=id+1;
+
+        chytridiomycetes.init(id); id=id+1;
+        zygomycetes.init(id); id=id+1;
+        ascomycetes.init(id); id=id+1;
+        glomeromycetes.init(id); id=id+1;
+        fungus.init(id); id=id+1;
+        fungus.setNbSousCategories(5);
+        basidiomycetes.init(id); id=id+1;
+
+
+        // assignation des regnes
+
+        /* regne animal */
+        mollusques.setRegne(animal);
+        arthropodes.setRegne(animal);
+        vertebres.setRegne(animal);
+
+        /* regne fongien */
+        chytridiomycetes.setRegne(fungus);
+        zygomycetes.setRegne(fungus);
+        ascomycetes.setRegne(fungus);
+        basidiomycetes.setRegne(fungus);
+        glomeromycetes.setRegne(fungus);
+
+
+        // classes
+
+        /* sous-embranchement agaricomycotina */
+        basidiomycetes.setNbSousCategories(3);
+
+        tremellomycetes = new Classe();
+        dacrymycetes = new Classe();
+        agaricomycetes = new Classe();
+
+        tremellomycetes.init(id); id=id+1;
+        dacrymycetes.init(id); id=id+1;
+        agaricomycetes.init(id); id=id+1;
+
+        tremellomycetes.setEmbranchement(basidiomycetes);
+        dacrymycetes.setEmbranchement(basidiomycetes);
+        agaricomycetes.setEmbranchement(basidiomycetes);
+
+        // ordres
+
+        /* agaricomycetidae, sous-classe des agaricomycetes */
+        agaricomycetes.setNbSousCategories(4);
+
+        jaapiales = new Ordre();
+        atheliales = new Ordre();
+        amylocorticiales = new Ordre();
+        agaricales = new Ordre();
+
+        jaapiales.init(id); id=id+1;
+        atheliales.init(id); id=id+1;
+        amylocorticiales.init(id); id=id+1;
+        agaricales.init(id); id=id+1;
+
+        jaapiales.setClasse(agaricomycetes);
+        atheliales.setClasse(agaricomycetes);
+        amylocorticiales.setClasse(agaricomycetes);
+        agaricales.setClasse(agaricomycetes);
+
+        // Familles
+
+        /* agaricales */
+        agaricales.setNbSousCategories(5);
+
+        agaricacees = new Famille();
+        amanitacees = new Famille();
+        cortinariacees = new Famille();
+        inocybacees = new Famille();
+        psathyrellacees = new Famille();
+
+        agaricacees.init(id); id=id+1;
+        amanitacees.init(id); id=id+1;
+        cortinariacees.init(id); id=id+1;
+        inocybacees.init(id); id=id+1;
+        psathyrellacees.init(id); id=id+1;
+
+        agaricacees.setOrdre(agaricales);
+        amanitacees.setOrdre(agaricales);
+        cortinariacees.setOrdre(agaricales);
+        inocybacees.setOrdre(agaricales);
+        psathyrellacees.setOrdre(agaricales);
+
+        // Genres
+
+        /* psathyrellacees */
+        psathyrellacees.setNbSousCategories(4);
+
+        coprinellus = new Genre();
+        coprinopsis = new Genre();
+        parasola = new Genre();
+        psathyrelles = new Genre();
+
+        coprinellus.init(id); id=id+1;
+        coprinopsis.init(id); id=id+1;
+        parasola.init(id); id=id+1;
+        psathyrelles.init(id); id=id+1;
+
+        coprinellus.setFamille(psathyrellacees);
+        coprinopsis.setFamille(psathyrellacees);
+        parasola.setFamille(psathyrellacees);
+        psathyrelles.setFamille(psathyrellacees);
+
+        // Especes
+
+        /* coprinopsis */
+        coprinopsis.setNbSousCategories(3);
+
+        atramentaria = new Espece();
+        cinerea = new Espece();
+        picacea = new Espece();
+
+        atramentaria.init(id); id=id+1;
+        cinerea.init(id); id=id+1;
+        picacea.init(id);
+
+        atramentaria.setGenre(coprinopsis);
+        cinerea.setGenre(coprinopsis);
+        picacea.setGenre(coprinopsis);
+
+        // c = jaapiales.surcategorie;
+        // picacea.setGenre(inocybacees);
+
+        /***** choix categorie *****/
+        c = psathyrellacees;
+        
+        index.printNom(c.getId());
+        println(" possède ",c.getNbSousCategories()," sous-catégorie(s)");
+        println();
+
+        while(c.getProfondeur() > 0) {
+            index.printNom(c.getId());
+            print(" (");
+            c.affiche();
+            print(") <- ");
+            c = c.getSurcategorie();
+        }
+        
+        if(c.getProfondeur() != 0) {
+            println("Erreur dans Main.proceder()");
+        } else {
+            index.printNom(c.getId());
+            print(" (");
+            c.affiche();
+            print(")");
+        }
+
+        println();
+        println("Le règne animal a ",animal.getNbSousCategories()," embranchements");
+    }
+}
+
+
+{
+    Main main = new Main();
+    main.start();
+}

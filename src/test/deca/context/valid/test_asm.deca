@@ -1,0 +1,21 @@
+// Description:
+//    Programme testant la methode asm
+//	  Etape(s) : A, B, C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//	hello
+//	multiline
+//
+// Historique:
+//    cree le 22/01/2021
+
+class A {
+	void Asm() asm(" hello \n multiline " );
+}
+{
+	A a = new A();
+	a.Asm();
+}

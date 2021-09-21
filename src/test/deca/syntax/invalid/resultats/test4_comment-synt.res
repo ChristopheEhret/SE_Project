@@ -1,0 +1,1 @@
+./src/test/deca/syntax/invalid/test4_comment.deca:16:2: mismatched input '/' expecting {INT, '-', 'false', 'if', 'new', 'null', 'readInt', 'readFloat', 'print', 'println', 'printlnx', 'printx', 'return', 'this', 'true', 'while', IDENT, '(', '}', '!', ';', FLOAT, STRING}

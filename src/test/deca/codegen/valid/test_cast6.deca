@@ -1,0 +1,31 @@
+// Description:
+//    Programme testant un cast objet vers sa classe d'origine
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    10
+//    14
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    float x = 1.0;
+}
+
+class B extends A {
+    int x = 10;
+}
+
+{
+    A a = new B();
+    B b = (B)(a);
+
+    int i = 1+(1+(1+(1+((B)(a).x))));
+
+    println(b.x);
+    println(i);
+}

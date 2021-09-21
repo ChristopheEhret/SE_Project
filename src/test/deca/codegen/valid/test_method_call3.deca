@@ -1,0 +1,25 @@
+// Description:
+//    Programme testant l'appel de méthode
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    1.00000e+01
+//
+// Historique:
+//    cree le 20/01/2021
+
+class A {
+    void test() {
+        float i = 10;
+        println(i);
+    }
+}
+
+{
+    A a = new A();
+
+    a.test();
+}

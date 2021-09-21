@@ -1,0 +1,16 @@
+// Description:
+//    Programme testant une declaration invalide.
+//	  Etape(s) : A et B
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : NON
+//
+// Resultats:
+//	  test_lex : pas d'erreur
+//    test_synt : erreur ligne 16 : no viable alternative at input '}'
+//
+// Historique:
+//    cree le 10/01/2021
+
+{
+	int x = 3
+}

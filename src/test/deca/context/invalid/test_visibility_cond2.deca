@@ -1,0 +1,30 @@
+// Description:
+//    Programme testant la visibilité d'un attribut
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 26 (Le type de 'x' (A) n'est pas un sous-type de B)
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	float y;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		return x;
+	}
+}
+class B extends A{
+	A a ;
+	int z = a.x;
+}
+{
+	A a = new A();	
+}

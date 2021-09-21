@@ -1,0 +1,32 @@
+// Description:
+//    Programme testant un appel de methode incorrect
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 31 ( le paramètre donné n'est pas du bon type)
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	float y;
+	string s;
+	int getX(int c){
+		return x;
+	}
+	float getY(){
+		return x;
+	}
+	string getS(){
+		return s;
+	}
+}
+{
+	A a = new A();	
+	string s;
+	a.getX(s);
+}

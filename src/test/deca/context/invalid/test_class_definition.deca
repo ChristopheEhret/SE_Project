@@ -1,0 +1,31 @@
+// Description:
+//    Programme testant l'unicité de la definition d'une classe
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 24 : La classe A est déja definie
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	protected int x ;
+	float y;
+	int getX(){
+		return x;
+	}
+	float getY(){
+		return y;
+	}
+}
+class A {
+	string s ;
+	string getS(){
+		return this.s;
+	}
+}
+{
+}

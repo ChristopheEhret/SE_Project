@@ -1,0 +1,30 @@
+// Description:
+//    Programme testant simplement la déclaration et l'instanciation de variables
+//	  Etape(s) : A, B et C
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : OUI
+//
+// Resultats:
+//    6.30000e+01;
+//    6.30000e+01;
+//
+// Historique:
+//    cree le 20/01/2021
+
+{
+    boolean i = true;
+
+    if(i && (i && (true && (false || (i && (false || (i && (i)))))))) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+
+    i = i && (i && (true && (false || (i && (false || (i && (i)))))));
+    if(i) {
+        println("ok");
+    } else {
+        println("ko");
+    }
+}

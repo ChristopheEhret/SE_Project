@@ -1,0 +1,23 @@
+// Description:
+//    Programme vérifiant qu'il est impossible de déclarer plusieurs fois le même champ dans la même classe
+//	  Etape(s) : A, B 
+// 	  Lexicalement : OUI
+//	  Syntaxiquement : OUI
+//	  Contextuellement : NON
+//
+// Resultats:
+//    erreur ligne 16 : Le champ y est déjà defini
+//
+// Historique:
+//    cree le 21/01/2021
+
+class A  {
+	float y;
+	float y;	
+	float getY(){
+		return y;
+	}
+}
+
+{
+}
